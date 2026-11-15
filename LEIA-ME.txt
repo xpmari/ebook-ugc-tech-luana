@@ -1,0 +1,9 @@
+PROJETO: UGC TECH DO ZERO
+
+conteudo/     texto completo do ebook (fonte única do conteúdo)
+assets/fotos  fotos da autora e avatares
+assets/prints prints de campanhas e de Instagram
+referencias/  paleta enviada pela cliente (só referência)
+.agents/skills/ebook-ugc-tech/SKILL.md   regras de design (versão atualizada com a paleta da cliente)
+
+Pendente da cliente: texto "Sobre a autora", agradecimentos e contatos/@.

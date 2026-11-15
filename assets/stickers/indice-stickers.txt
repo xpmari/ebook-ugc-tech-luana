@@ -1,0 +1,37 @@
+STICKERS DO EBOOK "UGC TECH DO ZERO"
+Lista de apoio: descreve cada sticker e o tema em que costuma combinar. Você decide onde usar.
+
+== recortes/  (colagem, preto e branco / bege) ==
+sticker-claquete.png        claquete de cinema recortada, preto e branco. Tema: vídeo, gravação, formatos de vídeo.
+sticker-megafone.png        mão segurando megafone, retícula preto e branco. Tema: anúncio, divulgação, chamada para ação.
+sticker-notebook.png        notebook visto de cima, tons de bege e prata. Tema: ferramentas, edição, trabalho no computador.
+sticker-explosao-bege.png   rabisco de destaque (três triângulos) em papel bege. Tema: atenção, dica, observação importante.
+sticker-camera-mao.png      mão segurando câmera analógica, retícula preto e branco, estrela laranja. Tema: fotos, gravação, conteúdo.
+sticker-fone-ouvido.png     fone de ouvido preto. Tema: áudio, edição, escuta, trabalho.
+sticker-alfinete.png        alfinete (tachinha) em retícula bege. Tema: lembrete, item fixado, destaque de lista.
+
+== giz/  (riscos de giz; cada um existe em 5 cores: -branco, -terracota, -laranja, -ameixa, -vinho) ==
+O -branco só aparece em fundo escuro (ameixa ou vinho). Em fundo claro, use as outras cores.
+sticker-giz-brilho            brilho em cruz. Tema: destaque, frase de impacto.
+sticker-giz-linhas-movimento  linhas de movimento. Tema: ação, junto de objetos.
+sticker-giz-seta-laco         seta com laço. Tema: apontar para algo, ligar passos.
+sticker-giz-sublinhado        rabisco para sublinhar. Tema: palavra de destaque em título.
+sticker-giz-circulo           círculo irregular. Tema: circular uma palavra ou número.
+sticker-giz-estrela           estrela desenhada. Tema: destaque, item importante.
+sticker-giz-coracao           coração. Tema: agradecimentos, carinho.
+sticker-giz-check             sinal de check. Tema: checklists, "feito".
+sticker-giz-onda              sublinhado ondulado. Tema: sublinhar de forma leve.
+sticker-giz-seta-curva        seta curva. Tema: indicar sequência ou direção.
+
+== verificar-licenca/  (usar só depois de confirmar a licença; ver observações) ==
+sticker-microfone.png            microfone preto com borda branca. O nome do arquivo original indica banco de imagens premium.
+extra-balao-olhos-ameixa.png     balão de mensagem com emoji de olhos (cor trocada para ameixa). Emoji no estilo Apple.
+extra-gato-carregando.png        gato laranja com ícone de carregando.
+extra-gato-espiando.png          gato espiando de canto.
+extra-gato-laco-rosa.png         gato branco com laço rosa.
+extra-gato-oculos-dedo.png       gato de óculos com emoji de dedo apontando para cima. Emoji no estilo Apple.
+Tom: divertido e informal. Combina com momentos leves, e não com avisos sérios.
+
+== Observações técnicas ==
+- Todos os stickers têm fundo transparente (PNG).
+- São arquivos pequenos (de 150 a 700 px de largura). Não ampliar além de 1,5 vez o tamanho original, senão ficam borrados.

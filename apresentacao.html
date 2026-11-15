@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UGC TECH DO ZERO — Lotes 1, 2 e 3 (Páginas 01 a 44)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600;1,9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+  /* Marca-d'água profissional e discreta */
+  .watermark-topo {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--font-corpo);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(74, 44, 122, 0.35);
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .page--ameixa .watermark-topo,
+  .page--vinho .watermark-topo {
+    color: rgba(250, 246, 241, 0.40);
+  }
+
+  .watermark-centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 46px;
+    border: 3px dashed rgba(74, 44, 122, 0.20);
+    border-radius: 20px;
+    background-color: rgba(250, 246, 241, 0.45);
+    font-family: var(--font-corpo);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(74, 44, 122, 0.22);
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(74, 44, 122, 0.05);
+  }
+
+  .watermark-sub {
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: rgba(196, 98, 63, 0.32);
+  }
+
+  .page--ameixa .watermark-centro,
+  .page--vinho .watermark-centro {
+    border-color: rgba(250, 246, 241, 0.28);
+    background-color: rgba(42, 26, 69, 0.35);
+    color: rgba(250, 246, 241, 0.26);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .page--ameixa .watermark-sub,
+  .page--vinho .watermark-sub {
+    color: rgba(242, 138, 48, 0.35);
+  }
+
+  /* Capa specific watermark: slightly adjusted to balance with cover elements */
+  #pagina-01-capa .watermark-centro {
+    top: 45%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+    padding: 16px 40px;
+    font-size: 24px;
+  }
+
+  @media print {
+    .page {
+      break-after: page;
+      page-break-after: always;
+    }
+    .page:last-of-type {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+  <section class="page page--ameixa" id="pagina-01-capa">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content capa-container">
+      <!-- Sticker globo em destaque na capa (sem cobrir título, subtítulo nem foto) -->
+      <img class="sticker" src="assets/stickers/recortes/globo.png" alt="" aria-hidden="true" style="top:12px; right:16px; width:220px; transform:rotate(8deg); filter:drop-shadow(0 14px 28px rgba(42, 26, 69, 0.35)); z-index:5;">
+      <img class="sticker" src="assets/stickers/giz/sticker-giz-brilho-branco.png" alt="" aria-hidden="true" style="top:8px; right:228px; width:76px; transform:rotate(-8deg); z-index:6;">
+
+      <h1 class="capa-titulo">
+        UGC <span class="capa-titulo__destaque">TECH</span><br>
+        DO ZERO
+      </h1>
+
+      <p class="capa-subtitulo">
+        Do primeiro cadastro às campanhas internacionais
+      </p>
+
+      <div class="capa-palco">
+        <img class="sticker" src="assets/stickers/recortes/sticker-camera-mao.png" alt="" aria-hidden="true" style="top:120px; left:30px; width:280px; transform:rotate(-6deg);">
+
+        <!-- Polaroid com a foto real da autora presa com a fita green gingham washi -->
+        <div class="polaroid capa-polaroid">
+          <img src="assets/stickers/recortes/green-gingham-washi.png" alt="" aria-hidden="true" style="position:absolute; top:-24px; left:130px; width:260px; height:auto; transform:rotate(-3deg); z-index:10; filter:drop-shadow(0 4px 10px rgba(42, 26, 69, 0.2)); pointer-events:none;">
+          <img src="assets/fotos/foto-autora-terninho-notebook.png" alt="Foto da autora">
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <section class="page" id="pagina-02-rosto">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <div class="rosto-caixa">
+        <h1 class="rosto-titulo">UGC TECH DO ZERO</h1>
+
+        <p class="rosto-subtitulo">Do primeiro cadastro às campanhas internacionais</p>
+
+        <p class="rosto-desc">
+          Um guia prático para mulheres brasileiras que desejam criar conteúdo para aplicativos, plataformas e ferramentas digitais — mesmo começando do zero e sem falar inglês.
+        </p>
+
+        <p class="rosto-autora">por Luana</p>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>UGC TECH DO ZERO</span>
+      <span class="rodape-pag__num">02</span>
+    </footer>
+  
+  </section>
+
+  <section class="page" id="pagina-03-sumario-1">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <header class="topo-nav" style="margin-bottom:14px;">
+        <span>UGC TECH DO ZERO</span>
+        <span class="topo-nav__tag">1 / 2</span>
+      </header>
+
+      <div class="sumario-topo" style="position:relative; margin-bottom:6px;">
+        <h2 class="sumario-titulo">
+          <span class="marca-texto">Sumário</span>
+        </h2>
+        <img class="sticker" src="assets/stickers/giz/sticker-giz-seta-curva-terracota.png" alt="" aria-hidden="true" style="top:4px; left:368px; width:140px; transform:rotate(-4deg);">
+      </div>
+
+      <div class="sumario-lista">
+        <h3 class="sumario-parte">Parte 1 – Entendendo o UGC Tech</h3>
+        <div class="sumario-item">
+          <span class="sumario-item__num">1.</span>
+          <span class="sumario-item__nome">Boas-vindas</span>
+          <span class="sumario-item__pag">p. 05</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">2.</span>
+          <span class="sumario-item__nome">O que é UGC Tech?</span>
+          <span class="sumario-item__pag">p. 07</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">3.</span>
+          <span class="sumario-item__nome">Como funciona o mercado de UGC Tech</span>
+          <span class="sumario-item__pag">p. 10</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">4.</span>
+          <span class="sumario-item__nome">UGC Tech, UGC tradicional e influenciadores: entenda a diferença</span>
+          <span class="sumario-item__pag">p. 12</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">5.</span>
+          <span class="sumario-item__nome">É possível começar do zero?</span>
+          <span class="sumario-item__pag">p. 14</span>
+        </div>
+
+        <h3 class="sumario-parte">Parte 2 – Preparação e gravação</h3>
+        <div class="sumario-item">
+          <span class="sumario-item__num">6.</span>
+          <span class="sumario-item__nome">O que você precisa para começar</span>
+          <span class="sumario-item__pag">p. 16</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">7.</span>
+          <span class="sumario-item__nome">Como preparar seu ambiente de gravação</span>
+          <span class="sumario-item__pag">p. 19</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">8.</span>
+          <span class="sumario-item__nome">Como gravar vídeos com aparência profissional</span>
+          <span class="sumario-item__pag">p. 21</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">9.</span>
+          <span class="sumario-item__nome">Formatos de vídeos que as empresas podem solicitar</span>
+          <span class="sumario-item__pag">p. 24</span>
+        </div>
+
+        <h3 class="sumario-parte">Parte 3 – Roteiros, ferramentas e presença online</h3>
+        <div class="sumario-item">
+          <span class="sumario-item__num">10.</span>
+          <span class="sumario-item__nome">Como criar roteiros que despertam interesse</span>
+          <span class="sumario-item__pag">p. 34</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">11.</span>
+          <span class="sumario-item__nome">Aplicativos e ferramentas para trabalhar</span>
+          <span class="sumario-item__pag">p. 37</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">12.</span>
+          <span class="sumario-item__nome">Como construir seu perfil no Instagram</span>
+          <span class="sumario-item__pag">p. 39</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">13.</span>
+          <span class="sumario-item__nome">Como montar seu portfólio</span>
+          <span class="sumario-item__pag">p. 42</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>Sumário</span>
+      <span class="rodape-pag__num">03</span>
+    </footer>
+  
+  </section>
+
+  <section class="page page--lilas" id="pagina-04-sumario-2">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <header class="topo-nav" style="margin-bottom:14px;">
+        <span>UGC TECH DO ZERO</span>
+        <span class="topo-nav__tag">2 / 2</span>
+      </header>
+
+      <div class="sumario-topo" style="margin-bottom:6px;">
+        <h2 class="sumario-titulo">
+          <span class="marca-texto">Sumário</span>
+        </h2>
+      </div>
+
+      <div class="sumario-lista">
+        <h3 class="sumario-parte">Parte 4 – Plataformas e candidaturas</h3>
+        <div class="sumario-item">
+          <span class="sumario-item__num">14.</span>
+          <span class="sumario-item__nome">Onde encontrar campanhas e oportunidades</span>
+          <span class="sumario-item__pag">p. 45</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">15.</span>
+          <span class="sumario-item__nome">Como criar seu cadastro nas plataformas</span>
+          <span class="sumario-item__pag">p. 47</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">16.</span>
+          <span class="sumario-item__nome">Como encontrar e escolher campanhas</span>
+          <span class="sumario-item__pag">p. 49</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">17.</span>
+          <span class="sumario-item__nome">Como se candidatar às oportunidades</span>
+          <span class="sumario-item__pag">p. 50</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">18.</span>
+          <span class="sumario-item__nome">Como trabalhar com UGC Tech sem falar inglês</span>
+          <span class="sumario-item__pag">p. 52</span>
+        </div>
+
+        <h3 class="sumario-parte">Parte 5 – Remuneração, briefings e contratos</h3>
+        <div class="sumario-item">
+          <span class="sumario-item__num">19.</span>
+          <span class="sumario-item__nome">Formas de remuneração: fixo, CPM e comissões</span>
+          <span class="sumario-item__pag">p. 54</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">20.</span>
+          <span class="sumario-item__nome">Como entender briefings e entregar vídeos</span>
+          <span class="sumario-item__pag">p. 63</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">21.</span>
+          <span class="sumario-item__nome">Contratos, direitos de uso e cuidados importantes</span>
+          <span class="sumario-item__pag">p. 65</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">22.</span>
+          <span class="sumario-item__nome">Como receber pagamentos internacionais</span>
+          <span class="sumario-item__pag">p. 68</span>
+        </div>
+
+        <h3 class="sumario-parte">Parte 6 – Crescimento, plano de ação e materiais extras</h3>
+        <div class="sumario-item">
+          <span class="sumario-item__num">23.</span>
+          <span class="sumario-item__nome">Como crescer no mercado de UGC Tech</span>
+          <span class="sumario-item__pag">p. 70</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">24.</span>
+          <span class="sumario-item__nome">Plano de ação de 30 dias</span>
+          <span class="sumario-item__pag">p. 72</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">25.</span>
+          <span class="sumario-item__nome">Materiais extras: modelos prontos e checklists</span>
+          <span class="sumario-item__pag">p. 76</span>
+        </div>
+        <div class="sumario-item">
+          <span class="sumario-item__num">26.</span>
+          <span class="sumario-item__nome">Glossário UGC Tech</span>
+          <span class="sumario-item__pag">p. 80</span>
+        </div>
+
+        <div class="sumario-item">
+          <span class="sumario-item__num">•</span>
+          <span class="sumario-item__nome">Considerações finais</span>
+          <span class="sumario-item__pag">p. 83</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>Sumário</span>
+      <span class="rodape-pag__num">04</span>
+    </footer>
+  
+  </section>
+
+  <section class="page" id="pagina-11-cap3-p2">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <header class="topo-nav">
+        <span>Parte 1 · Capítulo 03</span>
+        <span class="topo-nav__tag">2 / 2</span>
+      </header>
+
+      <h3 class="subtitulo-cap" style="margin-bottom:12px;">Exemplo prático:</h3>
+      <img class="sticker" src="assets/stickers/giz/sticker-giz-seta-laco-ameixa.png" alt="" aria-hidden="true" style="top:54px; right:16px; width:105px; transform:rotate(4deg);">
+
+      <p class="texto-corpo" style="margin-bottom:10px;">
+        Uma empresa desenvolve um aplicativo de inteligência artificial para organização de tarefas.
+      </p>
+
+      <p class="texto-corpo" style="font-weight:500; margin-bottom:16px;">
+        A marca pode solicitar um vídeo mostrando:
+      </p>
+
+      <div>
+        <div class="passo-linha">
+          <span class="passo-num">1.</span>
+          <span class="passo-txt">Uma situação em que a pessoa está com muitas tarefas.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">2.</span>
+          <span class="passo-txt">A apresentação do aplicativo.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">3.</span>
+          <span class="passo-txt">A demonstração de como a ferramenta funciona.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">4.</span>
+          <span class="passo-txt">O resultado ou benefício percebido.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">5.</span>
+          <span class="passo-txt">Uma chamada para conhecer o aplicativo.</span>
+        </div>
+      </div>
+
+      <div class="card-bloco card-bloco--ameixa" style="margin-top:16px; padding:24px 30px;">
+        <p class="texto-corpo" style="color:var(--bg); font-size:33px; line-height:1.45;">
+          A criadora não precisa desenvolver o aplicativo. Seu trabalho é produzir o conteúdo solicitado, respeitando o briefing e as regras da campanha.
+        </p>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>3. Como funciona o mercado de UGC Tech</span>
+      <span class="rodape-pag__num">11</span>
+    </footer>
+  
+  </section>
+
+  <section class="page" id="pagina-15-cap5-p2">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <header class="topo-nav">
+        <span>Parte 1 · Capítulo 05</span>
+        <span class="topo-nav__tag">2 / 2</span>
+      </header>
+
+      <div class="card-bloco card-bloco--ameixa" style="padding:22px 28px; margin-bottom:18px;">
+        <p class="texto-corpo" style="color:var(--bg); font-size:31px; line-height:1.42;">
+          Esses conteúdos podem servir como amostras para seu portfólio. Identifique os vídeos como <strong>projetos demonstrativos</strong>, principalmente quando não forem trabalhos contratados por uma empresa. Não apresente uma demonstração como se fosse uma campanha oficial.
+        </p>
+      </div>
+
+      <h3 class="subtitulo-cap" style="font-size:38px; margin-bottom:12px;">
+        O que as marcas podem observar?
+      </h3>
+      <img class="sticker" src="assets/stickers/giz/sticker-giz-check-vinho.png" alt="" aria-hidden="true" style="top:364px; right:110px; width:74px; transform:rotate(-6deg);">
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:18px;">
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Clareza na comunicação.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Boa iluminação e áudio.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Criatividade.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Naturalidade diante da câmera.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Capacidade de explicar uma ferramenta.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Qualidade da gravação de tela.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Cumprimento das instruções.</span>
+        </div>
+
+        <div class="check-item">
+          <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FAF6F1"/>
+            <path d="M10 18 L15 23 L26 12" stroke="#6B8E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="check-rotulo">Organização e pontualidade.</span>
+        </div>
+      </div>
+
+      <div class="postit" style="margin-top:auto; padding-bottom:14px; transform:rotate(-1deg);">
+        <p class="nota-mao" style="font-size:33px; color:var(--tinta);">
+          Você não precisa ser perfeita no primeiro vídeo. Precisa estar disposta a aprender, praticar e melhorar.
+        </p>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>5. É possível começar do zero?</span>
+      <span class="rodape-pag__num">15</span>
+    </footer>
+  
+  </section>
+
+  <section class="page" id="pagina-23-cap8-p3">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <header class="topo-nav">
+        <span>Parte 2 · Capítulo 08</span>
+        <span class="topo-nav__tag">3 / 3</span>
+      </header>
+
+      <div style="position:relative; margin-bottom:14px;">
+        <h3 class="subtitulo-cap" style="font-size:44px;">
+          Gravação de tela
+        </h3>
+        <img class="sticker" src="assets/stickers/giz/sticker-giz-seta-curva-ameixa.png" alt="" aria-hidden="true" style="top:0px; right:20px; width:130px; transform:rotate(-4deg);">
+      </div>
+
+      <p class="texto-corpo" style="margin-bottom:10px; line-height:1.4;">
+        Nos vídeos de UGC Tech, a gravação de tela é muito importante.
+      </p>
+
+      <p class="texto-corpo" style="font-weight:700; color:var(--ameixa); margin-bottom:16px;">
+        Antes de gravar:
+      </p>
+
+      <div>
+        <div class="passo-linha">
+          <span class="passo-num">1.</span>
+          <span class="passo-txt">Abra o aplicativo.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">2.</span>
+          <span class="passo-txt">Organize a tela na etapa em que deseja começar.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">3.</span>
+          <span class="passo-txt">Feche notificações.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">4.</span>
+          <span class="passo-txt">Confira se a função que vai demonstrar está funcionando.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">5.</span>
+          <span class="passo-txt">Grave a sequência com movimentos claros.</span>
+        </div>
+        <div class="passo-linha">
+          <span class="passo-num">6.</span>
+          <span class="passo-txt">Faça uma segunda gravação se precisar corrigir alguma parte.</span>
+        </div>
+      </div>
+
+      <div class="card-bloco card-bloco--ameixa" style="margin-top:auto; padding:26px 32px;">
+        <p class="texto-corpo" style="color:var(--bg); font-size:34px; line-height:1.45;">
+          <strong style="color:var(--laranja);">Dica:</strong> grave pequenos trechos em vez de tentar fazer tudo perfeitamente em uma única tomada.
+        </p>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>8. Como gravar vídeos com aparência profissional</span>
+      <span class="rodape-pag__num">23</span>
+    </footer>
+  
+  </section>
+
+  <section class="page" id="pagina-36-cap10-p3">
+
+  <div class="watermark-topo" aria-hidden="true">PRÉVIA EXCLUSIVA PARA AVALIAÇÃO · NÃO REPRODUZIR</div>
+  <div class="watermark-centro" aria-hidden="true">
+    <span>PRÉVIA EXCLUSIVA PARA AVALIAÇÃO</span>
+    <span class="watermark-sub">NÃO REPRODUZIR</span>
+  </div>
+
+
+    <div class="page-content">
+      <header class="topo-nav">
+        <span>Parte 3 · Capítulo 10</span>
+        <span class="topo-nav__tag">3 / 3</span>
+      </header>
+
+      <div style="position:relative; margin-bottom:12px;">
+        <h3 class="subtitulo-cap" style="font-size:38px; max-width:780px;">
+          Exemplo de roteiro para aplicativo de organização
+        </h3>
+        <img class="sticker" src="assets/stickers/recortes/sticker-claquete.png" alt="" aria-hidden="true" style="top:-24px; right:10px; width:115px; transform:rotate(6deg);">
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:12px;">
+        <div class="card-bloco" style="padding:10px 22px; border-left:6px solid var(--ameixa);">
+          <p class="texto-corpo" style="font-size:30px; font-weight:700; color:var(--ameixa); margin-bottom:3px;">
+            Cena 1 — Hook
+          </p>
+          <p class="texto-corpo" style="font-size:30px; line-height:1.32; font-style:italic;">
+            “Eu sempre esquecia alguma tarefa importante durante o dia.”
+          </p>
+        </div>
+
+        <div class="card-bloco card-bloco--lilas" style="padding:10px 22px;">
+          <p class="texto-corpo" style="font-size:30px; font-weight:700; color:var(--ameixa); margin-bottom:3px;">
+            Cena 2 — Problema
+          </p>
+          <p class="texto-corpo" style="font-size:30px; line-height:1.32; font-style:italic;">
+            “Às vezes, eu anotava em vários lugares e depois não encontrava nada.”
+          </p>
+        </div>
+
+        <div class="card-bloco" style="padding:10px 22px; border-left:6px solid var(--laranja);">
+          <p class="texto-corpo" style="font-size:30px; font-weight:700; color:var(--laranja); margin-bottom:3px;">
+            Cena 3 — Demonstração
+          </p>
+          <p class="texto-corpo" style="font-size:30px; line-height:1.32; font-style:italic;">
+            “Comecei a testar esse aplicativo para reunir minhas tarefas em um só lugar.”
+          </p>
+        </div>
+
+        <div class="card-bloco card-bloco--lilas" style="padding:10px 22px;">
+          <p class="texto-corpo" style="font-size:30px; font-weight:700; color:var(--ameixa); margin-bottom:3px;">
+            Cena 4 — Benefício
+          </p>
+          <p class="texto-corpo" style="font-size:30px; line-height:1.32; font-style:italic;">
+            “Assim, consigo visualizar melhor o que preciso fazer.”
+          </p>
+        </div>
+
+        <div class="card-bloco" style="padding:10px 22px; border-left:6px solid var(--oliva);">
+          <p class="texto-corpo" style="font-size:30px; font-weight:700; color:var(--ameixa); margin-bottom:3px;">
+            Cena 5 — CTA
+          </p>
+          <p class="texto-corpo" style="font-size:30px; line-height:1.32; font-style:italic;">
+            “Se você também gosta de manter tudo organizado, vale a pena conhecer.”
+          </p>
+        </div>
+      </div>
+
+      <div class="card-bloco card-bloco--ameixa" style="padding:14px 22px; border-left:8px solid var(--laranja);">
+        <p class="texto-corpo" style="color:var(--bg); font-size:30px; line-height:1.38;">
+          O roteiro é um exemplo. Só utilize afirmações que correspondam à experiência real e às funcionalidades do aplicativo.
+        </p>
+      </div>
+    </div>
+
+    <footer class="rodape-pag">
+      <span>10. Como criar roteiros que despertam interesse</span>
+      <span class="rodape-pag__num">36</span>
+    </footer>
+  
+  </section>
+
+</body>
+</html>
