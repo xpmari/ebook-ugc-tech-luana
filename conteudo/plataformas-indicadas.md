@@ -10,21 +10,33 @@ Uma das minhas favoritas para quem quer começar no UGC Tech! Tem diversas campa
 
 Plataforma com diversas campanhas para criadores de conteúdo, principalmente oportunidades remuneradas. Os valores costumam ser muito bons, mas é necessário ter CNPJ para participar. Pagamento em 60 dias.
 
+Site: https://mis-app.com/
+
 ## Influee
 
 Plataforma com diversas campanhas para criadores de conteúdo e oportunidades remuneradas no UGC. Você encontra marcas de diferentes segmentos e campanhas com cachês variados e o pagamento é em dólar.
+
+Site: https://influee.co/
 
 ## Noovid
 
 Plataforma com campanhas remuneradas para criadores de conteúdo, com foco em marcas e experiências.
 
+Site: https://noovid.com/pt-br
+
 ## Conty
 
 Plataforma com diversas campanhas remuneradas, principalmente no nicho de tecnologia (UGC Tech). Tem oportunidades com cachês menores e maiores, mas atenção: o prazo de pagamento é de até 120 dias.
 
+Site: https://appconty.com/pt
+
 ## JobStep
 
-[DESCRIÇÃO PENDENTE DA CLIENTE]
+É uma plataforma de recrutamento de criadores de conteúdo focada em vídeos curtos para divulgação de aplicativos no TikTok e no Instagram.
+
+Site: https://www.jobstep.io/pt-br
+
+Confira as regras atuais no site oficial de cada plataforma.
 
 ---
 

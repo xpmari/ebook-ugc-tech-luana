@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capa E-book — UGC TECH DO ZERO (Static Print Ready)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 30%, #240E3E 0%, #0E041A 100%);
+      font-family: 'Inter', sans-serif;
+      padding: 30px 20px;
+    }
+
+    /* ==========================================================================
+       CONTAINER DA CAPA (ESTÁTICO: aspect-ratio 4/5, max-width 450px)
+       ========================================================================== */
+    .capa-ebook {
+      position: relative;
+      width: 100%;
+      max-width: 450px;
+      aspect-ratio: 4 / 5;
+      height: auto;
+      max-height: 1300px;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 
+        0 30px 70px -15px rgba(10, 2, 20, 0.85),
+        0 0 0 1px rgba(255, 255, 255, 0.10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 26px 20px 24px 20px;
+      user-select: none;
+      /* Fundo Base Roxo com Mesh Gradient Estático */
+      background: 
+        radial-gradient(circle at 14% 10%, rgba(158, 130, 210, 0.38) 0%, transparent 42%),
+        radial-gradient(circle at 86% 45%, rgba(242, 140, 40, 0.28) 0%, transparent 46%),
+        radial-gradient(circle at 50% 55%, rgba(242, 140, 40, 0.16) 0%, transparent 38%),
+        radial-gradient(circle at 20% 86%, rgba(158, 130, 210, 0.26) 0%, transparent 44%),
+        #4A2376;
+    }
+
+    /* Textura de ruído / papel impresso forçada a 15% de opacidade */
+    .capa-noise {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Watermark CREATOR gigante ocupando o lado direito do fundo na vertical */
+    .capa-watermark {
+      position: absolute;
+      top: 50%;
+      right: -45px;
+      transform: translateY(-50%) rotate(90deg);
+      transform-origin: center center;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      font-size: 100px;
+      line-height: 1;
+      letter-spacing: 0.12em;
+      color: transparent;
+      -webkit-text-stroke: 1px #FFFFFF;
+      opacity: 0.05;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 1;
+      user-select: none;
+    }
+
+    /* ==========================================================================
+       2. TIPOGRAFIA EDITORIAL
+       ========================================================================== */
+    .capa-header {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 22px; /* distanciamento aumentado entre subtítulo e polaroid */
+      flex-shrink: 0;
+    }
+
+    .capa-titulo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+      font-size: clamp(30px, 8vw, 38px);
+      text-shadow: 0 4px 16px rgba(22, 6, 38, 0.55);
+    }
+
+    .capa-titulo .palavra-tech {
+      color: #F28C28;
+      font-style: italic;
+      font-weight: 900;
+      margin-left: 3px;
+    }
+
+    /* Cápsula de vidro fosco estático */
+    .capa-pill {
+      margin-top: 10px;
+      padding: 6px 16px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      border-radius: 9999px;
+      box-shadow: 
+        0 4px 14px rgba(0, 0, 0, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.22);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 92%;
+    }
+
+    .capa-subtitulo {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(9.5px, 2.4vw, 11px);
+      font-weight: 500;
+      letter-spacing: 0.015em;
+      color: rgba(255, 255, 255, 0.95);
+      white-space: nowrap;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ==========================================================================
+       3. POLAROID ESTÁTICA COM 3D POP-OUT REALISTA (80% DO TAMANHO ANTERIOR)
+       ========================================================================== */
+    .capa-palco {
+      position: relative;
+      z-index: 3;
+      flex: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .polaroid-static-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Moldura da Polaroid ampliada com destaque editorial */
+    .polaroid-card {
+      position: relative;
+      width: clamp(220px, 56vw, 246px);
+      background-color: #FFFFFF;
+      padding: 8px 8px 28px 8px;
+      border-radius: 4px;
+      box-shadow: 
+        0 24px 50px -10px rgba(10, 2, 20, 0.88),
+        0 8px 18px rgba(0, 0, 0, 0.42),
+        0 0 0 1px rgba(255, 255, 255, 0.5);
+      transform: rotate(-3deg);
+    }
+
+    /* Washi tape translúcida decorativa no topo */
+    .polaroid-washi {
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%) rotate(1deg);
+      width: 76px;
+      height: 16px;
+      background: rgba(250, 244, 235, 0.60);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      border-left: 1px dashed rgba(190, 175, 160, 0.5);
+      border-right: 1px dashed rgba(190, 175, 160, 0.5);
+      box-shadow: 0 2px 6px rgba(18, 4, 30, 0.22);
+      z-index: 9;
+      pointer-events: none;
+    }
+
+    /* Clip metálico prata (silver bulldog clip) */
+    .polaroid-clip {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: auto;
+      z-index: 10;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
+      pointer-events: none;
+    }
+
+    /* Camada Base: com overflow: hidden */
+    .polaroid-base-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 7 / 9;
+      background-color: #EDE8F3;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    .polaroid-img-base {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.18) translateY(-2%);
+      transform-origin: center top;
+    }
+
+    /* Camada 3D Pop-out: overflow visível que ultrapassa a borda branca */
+    .polaroid-popout-frame {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 28px;
+      pointer-events: none;
+      z-index: 6;
+    }
+
+    .polaroid-img-popout {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.18) translateY(-2%);
+      transform-origin: center top;
+      filter: drop-shadow(0 10px 20px rgba(16, 3, 30, 0.68));
+    }
+
+    /* ==========================================================================
+       4. SPARKLES ESTÁTICOS NAS LATERAIS
+       ========================================================================== */
+    .sparkle {
+      position: absolute;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .sparkle-svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sparkle--1 {
+      top: 24px;
+      right: 24px;
+      width: 18px;
+      height: 18px;
+      opacity: 0.85;
+    }
+
+    .sparkle--2 {
+      top: 48%;
+      left: 28px;
+      width: 22px;
+      height: 22px;
+      opacity: 0.9;
+    }
+
+    .sparkle--3 {
+      top: 58%;
+      right: 28px;
+      width: 19px;
+      height: 19px;
+      opacity: 0.85;
+    }
+
+    .sparkle--4 {
+      bottom: 30px;
+      left: 36px;
+      width: 15px;
+      height: 15px;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CONTAINER ÚNICO RESPONSIVO (aspect-ratio 4/5, max-width 450px) -->
+  <div class="capa-ebook">
+    <!-- Textura granulada estática forçada (noise/grain a 15%) -->
+    <div class="capa-noise" aria-hidden="true"></div>
+
+    <!-- Watermark CREATOR gigante ocupando o lado direito do fundo na vertical -->
+    <div class="capa-watermark" aria-hidden="true">CREATOR</div>
+
+    <!-- 4 Sparkles estéticos em outline fino reposicionados nas laterais -->
+    <div class="sparkle sparkle--1" aria-hidden="true">
+      <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z"/>
+      </svg>
+    </div>
+    <div class="sparkle sparkle--2" aria-hidden="true">
+      <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#F28C28" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z"/>
+      </svg>
+    </div>
+    <div class="sparkle sparkle--3" aria-hidden="true">
+      <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z"/>
+      </svg>
+    </div>
+    <div class="sparkle sparkle--4" aria-hidden="true">
+      <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#FAF6F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z"/>
+      </svg>
+    </div>
+
+    <!-- 2. Tipografia Editorial (Topo) -->
+    <header class="capa-header">
+      <h1 class="capa-titulo">
+        UGC <span class="palavra-tech">TECH</span><br>
+        DO ZERO
+      </h1>
+
+      <div class="capa-pill">
+        <span class="capa-subtitulo">Do primeiro cadastro às campanhas internacionais</span>
+      </div>
+    </header>
+
+    <!-- 3. Polaroid e Efeito 3D Pop-out Estático (80% tamanho) -->
+    <div class="capa-palco">
+      <div class="polaroid-static-wrapper">
+        <div class="polaroid-card">
+          <!-- Washi tape translúcida decorativa -->
+          <div class="polaroid-washi" aria-hidden="true"></div>
+
+          <!-- Clip metálico prateado minimalista -->
+          <img src="assets/stickers/recortes/silver-bulldog-clip.png" class="polaroid-clip" alt="" aria-hidden="true">
+
+          <!-- Camada Base: com overflow: hidden -->
+          <div class="polaroid-base-frame">
+            <img src="assets/fotos/foto-autora-terninho-notebook.png" alt="Luana — Autora" class="polaroid-img-base">
+          </div>
+
+          <!-- Camada 3D Pop-out: overflow visível que ultrapassa a moldura branca -->
+          <div class="polaroid-popout-frame">
+            <img src="assets/fotos/foto-autora-semfundo.png" alt="" aria-hidden="true" class="polaroid-img-popout">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
