@@ -1,0 +1,977 @@
+/* ==========================================================================
+   UGC TECH DO ZERO — Folha de Estilos Oficial (1080 × 1350 px)
+   Identidade: Pinterest / Colagem Editorial Artesanal.
+   Fundo chapado e leve para exportação em PDF leve (< 40 MB).
+   Sem cortes de texto, sem overflow:hidden para esconder conteúdo.
+   ========================================================================== */
+
+:root {
+  /* Dimensões obrigatórias 4:5 vertical para smartphone */
+  --page-w: 1080px;
+  --page-h: 1350px;
+  --pad-top: 86px;
+  --pad-side: 90px;
+  --pad-bottom: 120px; /* reserva fixa e intocada acima da faixa do rodapé */
+
+  /* Paleta estrita da cliente */
+  --bg:        #FAF6F1; /* branco quente — fundo principal (~60%) */
+  --ameixa:    #4A2C7A; /* ameixa profunda — cor da marca, títulos, blocos (~25%) */
+  --roxo:      #4A2C7A; /* alias para ameixa */
+  --lilas:     #CDB8EA; /* lilás — apoio, fundos secundários, cartões */
+  --laranja:   #F28A30; /* laranja — destaque (~10%) */
+  --terracota: #C4623F; /* terracota — detalhes quentes (~5%) */
+  --branco:    #FFFFFF; /* branco puro para fotos e recortes */
+  --tinta:     #2A1A45; /* ameixa quase preto — texto corrido */
+
+  /* Cores de acento */
+  --oliva:     #6B8E3E; /* verde oliva — checklist e detalhes */
+  --vinho:     #751842; /* vinho — acentos editoriais */
+
+  /* Variações de opacidade para fitas e sombras (leves e vetorizadas para PDF) */
+  --tinta-suave:    rgba(42, 26, 69, 0.72);
+  --tinta-borda:    rgba(42, 26, 69, 0.16);
+  --sombra-papel:   0 3px 8px rgba(42, 26, 69, 0.07);
+  --sombra-recorte: 0 4px 10px rgba(42, 26, 69, 0.10);
+  --sombra-ameixa:  0 4px 10px rgba(42, 26, 69, 0.20);
+  --fita-laranja:   rgba(242, 138, 48, 0.65);
+  --fita-lilas:     rgba(205, 184, 234, 0.80);
+  --fita-terracota: rgba(196, 98, 63, 0.60);
+  --fita-oliva:     rgba(107, 142, 62, 0.70);
+  --fita-vinho:     rgba(117, 24, 66, 0.70);
+  --marca-texto:    rgba(242, 138, 48, 0.35);
+  --marca-lilas:    rgba(205, 184, 234, 0.55);
+
+  /* Tipografia oficial */
+  --font-titulo: 'Fraunces', Georgia, serif;
+  --font-corpo:  'DM Sans', sans-serif;
+  --font-mao:    'Caveat', cursive;
+}
+
+@page {
+  size: 1080px 1350px;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-corpo);
+  color: var(--tinta);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   DETECTOR VISUAL DE ESTOURO (DEBUG / CONTROLE DE QUALIDADE)
+   ========================================================================== */
+@media screen {
+  .page--estouro {
+    outline: 10px solid #D32F2F !important;
+    outline-offset: -10px !important;
+  }
+
+  .estouro-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: #D32F2F;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 22px;
+    border-radius: 999px;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(211, 47, 47, 0.40);
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    font-family: var(--font-corpo);
+  }
+
+  .preview-banner {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E8F5E9;
+    border-bottom: 3px solid #4CAF50;
+    color: #1B5E20;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 24px;
+    text-align: center;
+    z-index: 99999;
+    font-family: var(--font-corpo);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .preview-banner--alerta {
+    border-color: #D32F2F !important;
+    background-color: #FFEBEE !important;
+    color: #B71C1C !important;
+  }
+
+  .preview-banner--alerta strong {
+    color: #D32F2F !important;
+  }
+}
+
+@media print {
+  .estouro-badge,
+  .preview-banner {
+    display: none !important;
+  }
+  .page--estouro {
+    outline: none !important;
+  }
+}
+
+/* ==========================================================================
+   ESTRUTURA DE PÁGINA (1080 × 1350 px)
+   NÃO USAR overflow:hidden para esconder cortes.
+   Faixa fixa de rodapé reservada e intocada pelo conteúdo.
+   ========================================================================== */
+.page {
+  width: var(--page-w, 1080px);
+  height: var(--page-h, 1350px);
+  position: relative;
+  break-after: page;
+  page-break-after: always;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  background-color: var(--bg);
+  color: var(--tinta);
+  padding: var(--pad-top) var(--pad-side) var(--pad-bottom) var(--pad-side);
+  display: flex;
+  flex-direction: column;
+}
+
+.page:last-of-type {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+.page--ameixa {
+  background-color: var(--ameixa);
+  color: var(--bg);
+}
+
+.page--vinho {
+  background-color: var(--vinho);
+  color: var(--bg);
+}
+
+.page--lilas {
+  background-color: var(--lilas);
+  color: var(--tinta);
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   TOPO E FAIXA FIXA DE RODAPÉ
+   ========================================================================== */
+.topo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  padding-bottom: 14px;
+  border-bottom: 2px dashed var(--tinta-borda);
+  margin-bottom: 26px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--ameixa);
+}
+
+.page--ameixa .topo-nav,
+.page--vinho .topo-nav {
+  border-bottom-color: rgba(250, 246, 241, 0.22);
+  color: var(--lilas);
+}
+
+.topo-nav__tag {
+  font-family: var(--font-mao);
+  font-size: 32px;
+  color: var(--terracota);
+}
+
+.page--ameixa .topo-nav__tag,
+.page--vinho .topo-nav__tag {
+  color: var(--laranja);
+}
+
+/* Faixa fixa do rodapé: 0 a 80px do fundo da página */
+.rodape-pag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 0 var(--pad-side) 36px var(--pad-side);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  color: var(--tinta-suave);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.page--ameixa .rodape-pag,
+.page--vinho .rodape-pag {
+  color: var(--lilas);
+}
+
+.rodape-pag__num {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--ameixa);
+}
+
+.page--ameixa .rodape-pag__num,
+.page--vinho .rodape-pag__num {
+  color: var(--laranja);
+}
+
+/* ==========================================================================
+   TIPOGRAFIA DO CORPO (34 a 38 px) E TÍTULOS
+   ========================================================================== */
+.texto-corpo {
+  font-size: 35px;
+  line-height: 1.5;
+  color: var(--tinta);
+}
+
+.page--ameixa .texto-corpo,
+.page--vinho .texto-corpo {
+  color: var(--bg);
+}
+
+.titulo-cap {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.15;
+  color: var(--ameixa);
+}
+
+.page--ameixa .titulo-cap,
+.page--vinho .titulo-cap {
+  color: var(--bg);
+}
+
+.subtitulo-cap {
+  font-family: var(--font-titulo);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.25;
+  color: var(--ameixa);
+}
+
+.page--ameixa .subtitulo-cap,
+.page--vinho .subtitulo-cap {
+  color: var(--laranja);
+}
+
+/* Anotação Caveat: somente frases do texto */
+.nota-mao {
+  font-family: var(--font-mao);
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--terracota);
+}
+
+.nota-mao--ameixa {
+  color: var(--ameixa);
+}
+
+.nota-mao--vinho {
+  color: var(--vinho);
+}
+
+.marca-texto {
+  background-color: var(--marca-texto);
+  padding: 2px 10px;
+  border-radius: 8px 4px 10px 6px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.marca-texto--lilas {
+  background-color: var(--marca-lilas);
+}
+
+/* ==========================================================================
+   ELEMENTOS DE COLAGEM PINTEREST
+   ========================================================================== */
+.washi {
+  position: absolute;
+  width: 140px;
+  height: 38px;
+  background-color: var(--fita-laranja);
+  border-left: 3px dotted rgba(250, 246, 241, 0.6);
+  border-right: 3px dotted rgba(250, 246, 241, 0.6);
+  z-index: 6;
+  pointer-events: none;
+}
+
+.washi--lilas {
+  background-color: var(--fita-lilas);
+}
+
+.washi--terracota {
+  background-color: var(--fita-terracota);
+}
+
+.washi--oliva {
+  background-color: var(--fita-oliva);
+}
+
+.washi--vinho {
+  background-color: var(--fita-vinho);
+}
+
+.sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: 7;
+  display: block;
+  height: auto;
+}
+
+.polaroid {
+  background-color: var(--branco);
+  padding: 16px 16px 44px;
+  border-radius: 18px;
+  box-shadow: var(--sombra-recorte);
+  position: relative;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.postit {
+  background-color: var(--laranja);
+  color: var(--tinta);
+  padding: 24px 28px;
+  border-radius: 8px 8px 30px 8px;
+  box-shadow: var(--sombra-papel);
+  position: relative;
+}
+
+.postit--lilas {
+  background-color: var(--lilas);
+  color: var(--tinta);
+}
+
+.postit--vinho {
+  background-color: var(--vinho);
+  color: var(--bg);
+}
+
+.postit--branco {
+  background-color: var(--branco);
+  border: 3px solid var(--ameixa);
+  color: var(--tinta);
+}
+
+.card-bloco {
+  background-color: var(--branco);
+  color: var(--tinta);
+  border-radius: 28px;
+  padding: 30px 34px;
+  box-shadow: var(--sombra-papel);
+  position: relative;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.pilar-bloco,
+.passo-linha,
+.check-item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.card-bloco .texto-corpo,
+.page--ameixa .card-bloco .texto-corpo,
+.page--vinho .card-bloco .texto-corpo {
+  color: var(--tinta);
+}
+
+.card-bloco--ameixa .texto-corpo {
+  color: var(--bg);
+}
+
+.card-bloco--lilas {
+  background-color: var(--lilas);
+}
+
+.card-bloco--ameixa {
+  background-color: var(--ameixa);
+  color: var(--bg);
+}
+
+/* ==========================================================================
+   PÁGINA 01 — CAPA MODERNA EDITORIAL ESTÁTICA (PDF PRINT READY)
+   ========================================================================== */
+.capa-page {
+  width: var(--page-w, 1080px) !important;
+  height: var(--page-h, 1350px) !important;
+  min-height: var(--page-h, 1350px) !important;
+  max-height: var(--page-h, 1350px) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding: 40px 60px 40px 60px !important;
+  color: #FFFFFF;
+  background: 
+    radial-gradient(circle at 14% 10%, rgba(158, 130, 210, 0.38) 0%, transparent 42%),
+    radial-gradient(circle at 86% 45%, rgba(242, 140, 40, 0.28) 0%, transparent 46%),
+    radial-gradient(circle at 50% 55%, rgba(242, 140, 40, 0.16) 0%, transparent 38%),
+    radial-gradient(circle at 20% 86%, rgba(158, 130, 210, 0.26) 0%, transparent 44%),
+    #4A2376 !important;
+}
+
+/* Container de fundo estético com overflow: hidden estrito para blindar scrollHeight */
+.capa-bg-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Watermark CREATOR gigante ocupando o lado direito do fundo na vertical */
+.capa-watermark {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 190px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
+  opacity: 0.05;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.capa-container {
+  height: 1060px !important;
+  max-height: 1100px !important;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.capa-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.capa-titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 0.95;
+  font-size: 92px;
+  text-shadow: 0 2px 8px rgba(22, 6, 38, 0.45);
+  margin: 0;
+}
+
+.capa-titulo .palavra-tech {
+  color: #F28C28;
+  font-style: italic;
+  font-weight: 900;
+  margin-left: 6px;
+}
+
+.capa-pill {
+  margin-top: 14px;
+  padding: 10px 28px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  box-shadow: 
+    0 3px 8px rgba(0, 0, 0, 0.18),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capa-subtitulo {
+  font-family: 'Inter', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.95);
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  max-width: none;
+}
+
+.capa-palco {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid-static-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Polaroid ampliada com destaque editorial (width: 500px) */
+.polaroid-card {
+  position: relative;
+  width: 500px;
+  background-color: #FFFFFF;
+  padding: 16px 16px 54px 16px;
+  border-radius: 6px;
+  box-shadow: 
+    0 8px 18px -4px rgba(12, 3, 22, 0.45),
+    0 3px 6px rgba(0, 0, 0, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.4);
+  transform: rotate(-3deg);
+}
+
+/* Washi tape translúcida decorativa no topo */
+.polaroid-washi {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 130px;
+  height: 28px;
+  background: rgba(250, 244, 235, 0.82);
+  border-left: 2px dashed rgba(190, 175, 160, 0.5);
+  border-right: 2px dashed rgba(190, 175, 160, 0.5);
+  box-shadow: 0 2px 5px rgba(18, 4, 30, 0.18);
+  z-index: 9;
+  pointer-events: none;
+}
+
+/* Clip metálico prata (silver bulldog clip) */
+.polaroid-clip {
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 62px;
+  height: auto;
+  z-index: 10;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+  pointer-events: none;
+}
+
+.polaroid-base-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 7 / 9;
+  background-color: #EDE8F3;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.polaroid-img-base {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.18) translateY(-2%);
+  transform-origin: center top;
+}
+
+.polaroid-popout-frame {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 54px;
+  pointer-events: none;
+  z-index: 6;
+}
+
+.polaroid-img-popout {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.18) translateY(-2%);
+  transform-origin: center top;
+  filter: drop-shadow(0 4px 8px rgba(16, 3, 30, 0.35));
+}
+
+.sparkle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.sparkle-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sparkles reposicionados nos espaços laterais criados pela redução da polaroid */
+.sparkle--1 {
+  top: 55px;
+  right: 90px;
+  width: 44px;
+  height: 44px;
+  opacity: 0.85;
+}
+
+.sparkle--2 {
+  top: 48%;
+  left: 75px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.9;
+}
+
+.sparkle--3 {
+  top: 56%;
+  right: 75px;
+  width: 44px;
+  height: 44px;
+  opacity: 0.85;
+}
+
+.sparkle--4 {
+  bottom: 85px;
+  left: 90px;
+  width: 34px;
+  height: 34px;
+  opacity: 0.75;
+}
+
+/* ==========================================================================
+   PÁGINA 02 — PÁGINA DE ROSTO
+   ========================================================================== */
+.rosto-caixa {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px dashed rgba(74, 44, 122, 0.24);
+  border-radius: 36px;
+  padding: 50px 44px;
+  background-color: var(--branco);
+  box-shadow: var(--sombra-papel);
+}
+
+.rosto-titulo {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 92px;
+  line-height: 1;
+  color: var(--ameixa);
+  margin-bottom: 28px;
+}
+
+.rosto-subtitulo {
+  font-family: var(--font-titulo);
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 1.25;
+  color: var(--terracota);
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.rosto-desc {
+  font-size: 34px;
+  line-height: 1.5;
+  color: var(--tinta);
+  max-width: 740px;
+  background-color: var(--bg);
+  padding: 26px 30px;
+  border-radius: 20px;
+  border-left: 6px solid var(--ameixa);
+  margin-bottom: 40px;
+}
+
+.rosto-autora {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--ameixa);
+  background-color: var(--lilas);
+  padding: 14px 34px;
+  border-radius: 999px;
+}
+
+/* ==========================================================================
+   PÁGINAS 03 E 04 — SUMÁRIO EM PARTES (COMPACTO E SEM CORTE)
+   ========================================================================== */
+.sumario-topo {
+  margin-bottom: 8px;
+}
+
+.sumario-titulo {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1;
+  color: var(--ameixa);
+}
+
+.sumario-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sumario-parte {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.15;
+  color: var(--ameixa);
+  margin-top: 8px;
+  margin-bottom: 2px;
+  padding-left: 12px;
+  border-left: 5px solid var(--terracota);
+  letter-spacing: -0.2px;
+}
+
+.sumario-parte:first-of-type {
+  margin-top: 2px;
+}
+
+.page--lilas .sumario-parte {
+  color: var(--ameixa);
+  border-left-color: var(--vinho);
+}
+
+.sumario-item {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: baseline;
+  gap: 10px;
+  padding: 3px 14px;
+  background-color: var(--branco);
+  border-radius: 12px;
+  box-shadow: var(--sombra-papel);
+  border: 1.5px solid rgba(205, 184, 234, 0.45);
+}
+
+.page--lilas .sumario-item {
+  border-color: rgba(74, 44, 122, 0.15);
+}
+
+.sumario-item__num {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--terracota);
+}
+
+.sumario-item__nome {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.18;
+  color: var(--tinta);
+}
+
+.sumario-item__pag {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--ameixa);
+  background-color: rgba(205, 184, 234, 0.4);
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   ABERTURAS E BLOCOS DE CAPÍTULO
+   ========================================================================== */
+.cap-abertura {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.cap-num {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 0.9;
+  color: var(--ameixa);
+  flex-shrink: 0;
+}
+
+.page--ameixa .cap-num {
+  color: var(--laranja);
+}
+
+/* Grid de nichos do Capítulo 2 */
+.grid-nichos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.nicho-card {
+  background-color: var(--branco);
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-size: 30px;
+  line-height: 1.3;
+  color: var(--tinta);
+  box-shadow: var(--sombra-papel);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nicho-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background-color: var(--laranja);
+  flex-shrink: 0;
+}
+
+/* Passo a passo 1-5 do Capítulo 3 */
+.passo-linha {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background-color: var(--branco);
+  border-radius: 20px;
+  padding: 13px 20px;
+  box-shadow: var(--sombra-papel);
+  border-left: 6px solid var(--ameixa);
+  margin-bottom: 10px;
+}
+
+.passo-num {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 38px;
+  color: var(--terracota);
+  width: 38px;
+  flex-shrink: 0;
+}
+
+.passo-txt {
+  font-size: 33px;
+  line-height: 1.35;
+  color: var(--tinta);
+}
+
+/* 3 pilares do Capítulo 4 */
+.pilar-bloco {
+  border-radius: 22px;
+  padding: 18px 24px;
+  box-shadow: var(--sombra-papel);
+  margin-bottom: 12px;
+}
+
+.pilar-bloco__tit {
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+.pilar-bloco__txt {
+  font-size: 31px;
+  line-height: 1.36;
+}
+
+/* Checklist do Capítulo 5 */
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--branco);
+  border-radius: 18px;
+  padding: 11px 16px;
+  box-shadow: var(--sombra-papel);
+  margin-bottom: 0;
+}
+
+.check-svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.check-rotulo {
+  font-size: 31px;
+  line-height: 1.3;
+  color: var(--tinta);
+  font-weight: 500;
+}
+
+/* Links clicáveis em cartões */
+.link-clicavel {
+  color: var(--terracota);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.link-clicavel:hover {
+  color: var(--laranja);
+}

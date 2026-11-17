@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    UGC TECH DO ZERO — Folha de Estilos Oficial (1080 × 1350 px)
    Identidade: Pinterest / Colagem Editorial Artesanal.
    Fundo chapado e leve para exportação em PDF leve (< 40 MB).
@@ -11,40 +11,51 @@
   --page-h: 1350px;
   --pad-top: 86px;
   --pad-side: 90px;
-  --pad-bottom: 120px; /* reserva fixa e intocada acima da faixa do rodapé */
+  --pad-bottom: 120px;
+  /* reserva fixa e intocada acima da faixa do rodapé */
 
   /* Paleta estrita da cliente */
-  --bg:        #FAF6F1; /* branco quente — fundo principal (~60%) */
-  --ameixa:    #4A2C7A; /* ameixa profunda — cor da marca, títulos, blocos (~25%) */
-  --roxo:      #4A2C7A; /* alias para ameixa */
-  --lilas:     #CDB8EA; /* lilás — apoio, fundos secundários, cartões */
-  --laranja:   #F28A30; /* laranja — destaque (~10%) */
-  --terracota: #C4623F; /* terracota — detalhes quentes (~5%) */
-  --branco:    #FFFFFF; /* branco puro para fotos e recortes */
-  --tinta:     #2A1A45; /* ameixa quase preto — texto corrido */
+  --bg: #FAF6F1;
+  /* branco quente — fundo principal (~60%) */
+  --ameixa: #4A2C7A;
+  /* ameixa profunda — cor da marca, títulos, blocos (~25%) */
+  --roxo: #4A2C7A;
+  /* alias para ameixa */
+  --lilas: #CDB8EA;
+  /* lilás — apoio, fundos secundários, cartões */
+  --laranja: #F28A30;
+  /* laranja — destaque (~10%) */
+  --terracota: #C4623F;
+  /* terracota — detalhes quentes (~5%) */
+  --branco: #FFFFFF;
+  /* branco puro para fotos e recortes */
+  --tinta: #2A1A45;
+  /* ameixa quase preto — texto corrido */
 
   /* Cores de acento */
-  --oliva:     #6B8E3E; /* verde oliva — checklist e detalhes */
-  --vinho:     #751842; /* vinho — acentos editoriais */
+  --oliva: #6B8E3E;
+  /* verde oliva — checklist e detalhes */
+  --vinho: #751842;
+  /* vinho — acentos editoriais */
 
   /* Variações de opacidade para fitas e sombras (leves e vetorizadas para PDF) */
-  --tinta-suave:    rgba(42, 26, 69, 0.72);
-  --tinta-borda:    rgba(42, 26, 69, 0.16);
-  --sombra-papel:   0 3px 8px rgba(42, 26, 69, 0.07);
+  --tinta-suave: rgba(42, 26, 69, 0.72);
+  --tinta-borda: rgba(42, 26, 69, 0.16);
+  --sombra-papel: 0 3px 8px rgba(42, 26, 69, 0.07);
   --sombra-recorte: 0 4px 10px rgba(42, 26, 69, 0.10);
-  --sombra-ameixa:  0 4px 10px rgba(42, 26, 69, 0.20);
-  --fita-laranja:   rgba(242, 138, 48, 0.65);
-  --fita-lilas:     rgba(205, 184, 234, 0.80);
+  --sombra-ameixa: 0 4px 10px rgba(42, 26, 69, 0.20);
+  --fita-laranja: rgba(242, 138, 48, 0.65);
+  --fita-lilas: rgba(205, 184, 234, 0.80);
   --fita-terracota: rgba(196, 98, 63, 0.60);
-  --fita-oliva:     rgba(107, 142, 62, 0.70);
-  --fita-vinho:     rgba(117, 24, 66, 0.70);
-  --marca-texto:    rgba(242, 138, 48, 0.35);
-  --marca-lilas:    rgba(205, 184, 234, 0.55);
+  --fita-oliva: rgba(107, 142, 62, 0.70);
+  --fita-vinho: rgba(117, 24, 66, 0.70);
+  --marca-texto: rgba(242, 138, 48, 0.35);
+  --marca-lilas: rgba(205, 184, 234, 0.55);
 
   /* Tipografia oficial */
   --font-titulo: 'Fraunces', Georgia, serif;
-  --font-corpo:  'DM Sans', sans-serif;
-  --font-mao:    'Caveat', cursive;
+  --font-corpo: 'DM Sans', sans-serif;
+  --font-mao: 'Caveat', cursive;
 }
 
 @page {
@@ -122,10 +133,12 @@ body {
 }
 
 @media print {
+
   .estouro-badge,
   .preview-banner {
     display: none !important;
   }
+
   .page--estouro {
     outline: none !important;
   }
@@ -445,7 +458,7 @@ body {
   position: relative !important;
   padding: 40px 60px 40px 60px !important;
   color: #FFFFFF;
-  background: 
+  background:
     radial-gradient(circle at 14% 10%, rgba(158, 130, 210, 0.38) 0%, transparent 42%),
     radial-gradient(circle at 86% 45%, rgba(242, 140, 40, 0.28) 0%, transparent 46%),
     radial-gradient(circle at 50% 55%, rgba(242, 140, 40, 0.16) 0%, transparent 38%),
@@ -534,7 +547,7 @@ body {
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9999px;
-  box-shadow: 
+  box-shadow:
     0 3px 8px rgba(0, 0, 0, 0.18),
     inset 0 1px 1px rgba(255, 255, 255, 0.25);
   display: inline-flex;
@@ -578,7 +591,7 @@ body {
   background-color: #FFFFFF;
   padding: 16px 16px 54px 16px;
   border-radius: 6px;
-  box-shadow: 
+  box-shadow:
     0 8px 18px -4px rgba(12, 3, 22, 0.45),
     0 3px 6px rgba(0, 0, 0, 0.22),
     0 0 0 1px rgba(255, 255, 255, 0.4);

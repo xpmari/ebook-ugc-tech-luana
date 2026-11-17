@@ -15,74 +15,67 @@
 
 <body>
 
-  <!-- ======================================================================
-       PÁGINA 01 — CAPA MODERNA AESTHETIC (3D POP-OUT & GLOWING ORBS)
+      <!-- ======================================================================
+       PÁGINA 01 — CAPA (MOODBOARD PINTEREST / CADERNO INTERATIVO)
        ====================================================================== -->
   <section class="page capa-page" id="pagina-01-capa">
-    <!-- Fundo decorativo estático com overflow: hidden para isolar do cálculo de scrollHeight -->
-    <div class="capa-bg-decor" aria-hidden="true">
-      <!-- 1. Watermark CREATOR gigante no fundo -->
-      <div class="capa-watermark">CREATOR</div>
-
-      <!-- 3. Sparkles estáticos em outline fino (4 pontas) -->
-      <div class="sparkle sparkle--1">
-        <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z" />
-        </svg>
-      </div>
-      <div class="sparkle sparkle--2">
-        <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#F28C28" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z" />
-        </svg>
-      </div>
-      <div class="sparkle sparkle--3">
-        <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z" />
-        </svg>
-      </div>
-      <div class="sparkle sparkle--4">
-        <svg class="sparkle-svg" viewBox="0 0 24 24" fill="none" stroke="#FAF6F1" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2 C12 7.5 16.5 12 22 12 C16.5 12 12 16.5 12 22 C12 16.5 7.5 12 2 12 C7.5 12 12 7.5 12 2 Z" />
-        </svg>
-      </div>
-    </div>
-
     <div class="page-content capa-container">
-      <!-- Tipografia Editorial (Topo da capa) -->
-      <header class="capa-header">
-        <h1 class="capa-titulo">
-          UGC <span class="palavra-tech">TECH</span><br>
+      <!-- Cabeçalho da Capa: Tag e Manuscrito -->
+      <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom:12px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; background:var(--lilas); color:var(--tinta); padding:6px 20px; border-radius:999px; font-weight:700; font-size:25px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          <span>Edição digital</span>
+        </div>
+        <span style="font-family:var(--font-mao); font-size:35px; color:var(--laranja); font-weight:700;">guia para iniciantes</span>
+      </div>
+
+      <!-- Título Principal em Fraunces -->
+      <header class="capa-header" style="text-align:left; width:100%; margin-bottom:14px;">
+        <h1 class="capa-titulo" style="font-family:var(--font-titulo); font-size:98px; font-weight:800; line-height:0.95; letter-spacing:-2px; color:#FFFFFF; margin:0;">
+          UGC <span style="font-style:italic; color:var(--laranja); font-weight:700;">TECH</span><br>
           DO ZERO
         </h1>
-
-        <div class="capa-pill">
-          <span class="capa-subtitulo">Do primeiro cadastro às campanhas internacionais</span>
+        <div style="display:inline-flex; align-items:center; gap:10px; background:rgba(42, 26, 69, 0.70); border:2px solid rgba(250, 246, 241, 0.35); border-radius:16px; padding:8px 20px; margin-top:12px;">
+          <span style="width:5px; height:28px; background:var(--laranja); border-radius:3px;"></span>
+          <span style="font-size:25px; font-weight:600; color:var(--texto-claro); letter-spacing:0.3px;">Do primeiro cadastro às campanhas internacionais</span>
         </div>
       </header>
 
-      <!-- Polaroid e Efeito 3D Pop-out Estático -->
-      <div class="capa-palco">
-        <div class="polaroid-static-wrapper">
-          <div class="polaroid-card">
-            <!-- Washi tape translúcida decorativa -->
-            <div class="polaroid-washi" aria-hidden="true"></div>
+      <!-- Palco de Colagem / Moodboard -->
+      <div style="position:relative; width:100%; flex:1; margin-top:4px;">
+        <!-- Post-it Laranja Inclinado à Esquerda -->
+        <div class="postit" style="position:absolute; top:16px; left:0; width:330px; transform:rotate(-4deg); z-index:4; background-color:#F58A32; padding:18px 22px;">
+          <div class="washi washi--branco" style="top:-14px; left:50%; transform:translateX(-50%); width:100px; height:28px;"></div>
+          <p style="font-family:var(--font-mao); font-size:34px; line-height:1.25; color:#2A1A45; margin:0; font-weight:700;">
+            um passo a passo visual e sem enrolação
+          </p>
+          <img src="assets/stickers/giz/sticker-giz-seta-laco-branco.png" alt="" aria-hidden="true" style="position:absolute; bottom:-40px; right:-50px; width:90px; transform:rotate(40deg); pointer-events:none;">
+        </div>
 
-            <!-- Clip metálico prateado minimalista -->
-            <img src="assets/stickers/recortes/silver-bulldog-clip.png" class="polaroid-clip" alt="" aria-hidden="true">
+        <!-- Card Lilás Elemento Tech no Canto Inferior Esquerdo -->
+        <div style="position:absolute; bottom:26px; left:0; width:340px; background:var(--lilas); border:3px dashed rgba(255,255,255,0.7); border-radius:22px; padding:18px 22px; transform:rotate(2deg); z-index:3; box-shadow:var(--sombra-papel);">
+          <div class="washi washi--terracota" style="top:-13px; right:28px; width:100px; height:26px;"></div>
+          <div style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2A1A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <span style="font-family:var(--font-corpo); font-size:24px; font-weight:700; color:#2A1A45; line-height:1.25;">
+              Criação de vídeos para apps e ferramentas digitais
+            </span>
+          </div>
+        </div>
 
-            <!-- Camada Base (Fundo da Polaroid): com overflow: hidden -->
-            <div class="polaroid-base-frame">
-              <img src="assets/fotos/foto-autora-terninho-notebook.png" alt="Luana — Autora" class="polaroid-img-base">
-            </div>
+        <!-- Polaroid com Foto Real da Autora e Fita Verde Gingham à Direita -->
+        <div class="polaroid" style="position:absolute; top:0; right:10px; width:420px; padding:16px 16px 40px 16px; border-radius:16px; transform:rotate(2deg); z-index:3; border:3px dashed rgba(61, 32, 84, 0.25);">
+          <img src="assets/stickers/recortes/green-gingham-washi.png" alt="" aria-hidden="true" style="position:absolute; top:-20px; left:50%; transform:translateX(-50%) rotate(-2deg); width:180px; height:auto; z-index:10; filter:drop-shadow(0 3px 6px rgba(0,0,0,0.25)); pointer-events:none;">
+          <img src="assets/fotos/foto-autora-terninho-notebook.png" alt="Foto da autora Luana" style="width:100%; height:390px; object-fit:cover; border-radius:10px; display:block;">
+          <p style="font-family:var(--font-mao); font-size:30px; color:#2A1A45; text-align:center; margin-top:12px; margin-bottom:0; font-weight:700;">
+            Luana · UGC Tech Creator
+          </p>
+        </div>
 
-            <!-- Camada 3D (Pop-out): overflow visível, ultrapassando a borda branca -->
-            <div class="polaroid-popout-frame">
-              <img src="assets/fotos/foto-autora-semfundo.png" alt="" aria-hidden="true" class="polaroid-img-popout">
-            </div>
+        <!-- Pílula de Autoria no Canto Inferior Direito -->
+        <div style="position:absolute; bottom:24px; right:10px; z-index:4;">
+          <div style="background:rgba(42, 26, 69, 0.85); border:2px solid rgba(250, 246, 241, 0.35); border-radius:999px; padding:8px 24px; color:var(--texto-claro); font-size:25px; font-weight:700;">
+            por <strong style="color:var(--laranja);">Luana</strong>
           </div>
         </div>
       </div>
@@ -265,60 +258,45 @@
         <div class="sumario-item">
           <span class="sumario-item__num">20.</span>
           <span class="sumario-item__nome">Como entender briefings e entregar vídeos</span>
-          <span class="sumario-item__pag">p. 62</span>
+          <span class="sumario-item__pag">p. 61</span>
         </div>
         <div class="sumario-item">
           <span class="sumario-item__num">21.</span>
           <span class="sumario-item__nome">Contratos, direitos de uso e cuidados importantes</span>
-          <span class="sumario-item__pag">p. 65</span>
+          <span class="sumario-item__pag">p. 64</span>
         </div>
         <div class="sumario-item">
           <span class="sumario-item__num">22.</span>
           <span class="sumario-item__nome">Como receber pagamentos internacionais</span>
-          <span class="sumario-item__pag">p. 68</span>
+          <span class="sumario-item__pag">p. 67</span>
         </div>
 
-        <h3 class="sumario-parte">Parte 6 – Crescimento, plano de ação e materiais extras</h3>
+        <h3 class="sumario-parte">Parte 6 – Crescimento</h3>
         <div class="sumario-item">
           <span class="sumario-item__num">23.</span>
           <span class="sumario-item__nome">Como crescer no mercado de UGC Tech</span>
-          <span class="sumario-item__pag">p. 70</span>
-        </div>
-        <div class="sumario-item">
-          <span class="sumario-item__num">24.</span>
-          <span class="sumario-item__nome">Plano de ação de 30 dias</span>
-          <span class="sumario-item__pag">p. 73</span>
-        </div>
-        <div class="sumario-item">
-          <span class="sumario-item__num">25.</span>
-          <span class="sumario-item__nome">Materiais extras: modelos prontos e checklists</span>
-          <span class="sumario-item__pag">p. 75</span>
-        </div>
-        <div class="sumario-item">
-          <span class="sumario-item__num">26.</span>
-          <span class="sumario-item__nome">Glossário UGC Tech</span>
-          <span class="sumario-item__pag">p. 79</span>
+          <span class="sumario-item__pag">p. 69</span>
         </div>
 
         <div class="sumario-item">
           <span class="sumario-item__num">•</span>
           <span class="sumario-item__nome">Considerações finais</span>
-          <span class="sumario-item__pag">p. 81</span>
+          <span class="sumario-item__pag">p. 72</span>
         </div>
         <div class="sumario-item">
           <span class="sumario-item__num">•</span>
           <span class="sumario-item__nome">Sobre a autora</span>
-          <span class="sumario-item__pag">p. 82</span>
+          <span class="sumario-item__pag">p. 73</span>
         </div>
         <div class="sumario-item">
           <span class="sumario-item__num">•</span>
           <span class="sumario-item__nome">Agradecimento</span>
-          <span class="sumario-item__pag">p. 83</span>
+          <span class="sumario-item__pag">p. 74</span>
         </div>
         <div class="sumario-item">
           <span class="sumario-item__num">•</span>
           <span class="sumario-item__nome">Contatos</span>
-          <span class="sumario-item__pag">p. 84</span>
+          <span class="sumario-item__pag">p. 75</span>
         </div>
       </div>
     </div>
@@ -2301,65 +2279,92 @@
     </footer>
   </section>
 
+  
   <!-- PÁGINA 39 — CAPÍTULO 12: COMO CONSTRUIR SEU PERFIL NO INSTAGRAM (PARTE 1/3) -->
   <section class="page" id="pagina-39-cap12-p1">
     <div class="page-content">
-      <header class="topo-nav" style="margin-bottom:8px;">
+      <header class="topo-nav" style="margin-bottom:14px;">
         <span>Parte 3 · Capítulo 12</span>
         <span class="topo-nav__tag">1 / 3</span>
       </header>
 
-      <div class="cap-abertura" style="margin-bottom:8px;">
+      <div class="cap-abertura" style="margin-bottom:16px;">
         <div class="cap-num">12</div>
         <h2 class="titulo-cap" style="font-size:46px;">COMO CONSTRUIR SEU PERFIL NO INSTAGRAM</h2>
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:4px; margin-bottom:8px;">
-        <p class="texto-corpo" style="font-size:31px; line-height:1.32;">
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
+        <p class="texto-corpo" style="font-size:32px; line-height:1.4;">
           O Instagram pode funcionar como uma vitrine do seu trabalho.
         </p>
-        <p class="texto-corpo" style="font-size:31px; line-height:1.32;">
+        <p class="texto-corpo" style="font-size:32px; line-height:1.4;">
           Mesmo que você encontre campanhas em plataformas externas, ter um perfil organizado ajuda a apresentar sua
           identidade como criadora.
         </p>
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:8px;">
-        <div class="card-bloco" style="border-left:8px solid var(--ameixa); padding:10px 18px;">
-          <h3
-            style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--ameixa); margin-bottom:2px;">
-            Foto de perfil
-          </h3>
-          <p class="texto-corpo" style="font-size:30px; line-height:1.3;">
-            Escolha uma foto nítida, com boa iluminação e aparência profissional.
-          </p>
+      <!-- Bloco Foto de Perfil: Comparativo Visual -->
+      <div class="card-bloco" style="border-left:10px solid var(--ameixa); padding:24px 28px; box-shadow:var(--sombra-papel);">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:18px;">
+          <div>
+            <h3 style="font-family:var(--font-titulo); font-size:35px; font-weight:700; color:var(--ameixa); margin-bottom:4px;">
+              Foto de perfil
+            </h3>
+            <p class="texto-corpo" style="font-size:27px; line-height:1.3; color:var(--tinta-suave); margin:0;">
+              Escolha uma imagem nítida, com boa iluminação e aparência profissional.
+            </p>
+          </div>
         </div>
 
-        <div class="card-bloco card-bloco--lilas" style="padding:10px 18px;">
-          <h3
-            style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--ameixa); margin-bottom:2px;">
-            Nome e identificação
-          </h3>
-          <p class="texto-corpo" style="font-size:30px; line-height:1.3; margin-bottom:2px;">
-            Você pode utilizar seu nome e uma identificação relacionada ao UGC Tech.
-          </p>
-          <p class="texto-corpo" style="font-size:30px; font-weight:700; color:var(--terracota); margin-bottom:1px;">
-            Exemplo:
-          </p>
-          <p class="texto-corpo" style="font-size:31px; font-weight:700; color:var(--ameixa);">
-            Luana | UGC Tech Creator
-          </p>
-        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <!-- Card 1: O que usar (Recomendado) -->
+          <div
+            style="background-color:rgba(104, 140, 62, 0.08); border:2.5px solid var(--oliva); border-radius:18px; padding:16px 18px; display:flex; gap:16px; align-items:center;">
+            <div style="position:relative; flex-shrink:0;">
+              <img src="assets/fotos/avatar-circular-1.png" alt="O que usar - Foto de perfil recomendada"
+                style="width:95px; height:95px; border-radius:50%; object-fit:cover; display:block; border:3px solid var(--oliva); box-shadow:0 3px 8px rgba(0,0,0,0.12);">
+              <span
+                style="position:absolute; bottom:-4px; right:-4px; width:28px; height:28px; border-radius:50%; background:var(--oliva); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:900; box-shadow:0 2px 4px rgba(0,0,0,0.25);">✓</span>
+            </div>
+            <div style="flex:1;">
+              <div
+                style="font-family:var(--font-titulo); font-size:26px; font-weight:700; color:var(--oliva); margin-bottom:4px; display:flex; align-items:center; gap:8px;">
+                <span>O que usar</span>
+                <span
+                  style="font-size:18px; font-weight:600; background:rgba(104, 140, 62, 0.2); padding:2px 8px; border-radius:8px;">Recomendado</span>
+              </div>
+              <p class="texto-corpo" style="font-size:24px; line-height:1.32; color:var(--tinta); margin:0;">
+                Foto clara, próxima e com boa iluminação. Mostra bem quem você é e transmite profissionalismo.
+              </p>
+            </div>
+          </div>
 
-        <div style="text-align:center; position:relative; margin-top:2px;">
-          <div class="washi washi--terracota"
-            style="top:-14px; left:50%; transform:translateX(-50%) rotate(1deg); z-index:3;"></div>
-          <img class="sticker" src="assets/stickers/giz/sticker-giz-seta-laco-laranja.png" alt="" aria-hidden="true"
-            style="bottom:6px; right:24px; width:95px; transform:rotate(-8deg);">
-          <img src="assets/prints/print-instagram-perfil.png" alt="Print do perfil do Instagram"
-            style="max-width:760px; width:92%; height:auto; border-radius:18px; box-shadow:var(--sombra-recorte); border:3px solid var(--branco); display:block; margin:0 auto;">
+          <!-- Card 2: O que evitar (Não recomendado) -->
+          <div
+            style="background-color:rgba(196, 77, 44, 0.06); border:2.5px solid var(--terracota); border-radius:18px; padding:16px 18px; display:flex; gap:16px; align-items:center;">
+            <div style="position:relative; flex-shrink:0;">
+              <img src="assets/fotos/avatar-circular-2.png" alt="O que evitar - Foto de perfil não recomendada"
+                style="width:95px; height:95px; border-radius:50%; object-fit:cover; display:block; border:3px solid var(--terracota); opacity:0.92; box-shadow:0 3px 8px rgba(0,0,0,0.12);">
+              <span
+                style="position:absolute; bottom:-4px; right:-4px; width:28px; height:28px; border-radius:50%; background:var(--terracota); color:#fff; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:900; box-shadow:0 2px 4px rgba(0,0,0,0.25);">✕</span>
+            </div>
+            <div style="flex:1;">
+              <div
+                style="font-family:var(--font-titulo); font-size:26px; font-weight:700; color:var(--terracota); margin-bottom:4px; display:flex; align-items:center; gap:8px;">
+                <span>O que evitar</span>
+                <span
+                  style="font-size:18px; font-weight:600; background:rgba(196, 77, 44, 0.15); padding:2px 8px; border-radius:8px;">Evitar</span>
+              </div>
+              <p class="texto-corpo" style="font-size:24px; line-height:1.32; color:var(--tinta); margin:0;">
+                Fotos muito distantes, com óculos escuros ou pouca visibilidade do rosto dificultam a conexão com as marcas.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <img class="sticker" src="assets/stickers/giz/sticker-giz-estrela-laranja.png" alt="" aria-hidden="true"
+        style="bottom:120px; right:40px; width:75px; transform:rotate(8deg);">
     </div>
 
     <footer class="rodape-pag">
@@ -2368,7 +2373,7 @@
     </footer>
   </section>
 
-  <!-- PÁGINA 40 — CAPÍTULO 12: BIO DO PERFIL (PARTE 2/3) -->
+  <!-- PÁGINA 40 — CAPÍTULO 12: NOME, IDENTIFICAÇÃO E BIO (PARTE 2/3) -->
   <section class="page page--lilas" id="pagina-40-cap12-p2">
     <div class="page-content">
       <header class="topo-nav">
@@ -2377,20 +2382,42 @@
       </header>
 
       <div style="display:flex; flex-direction:column; gap:16px;">
-        <div class="card-bloco" style="border-left:8px solid var(--laranja); padding:22px 28px;">
+        <!-- Bloco 1: Nome e identificação -->
+        <div class="card-bloco" style="border-left:8px solid var(--ameixa); padding:18px 24px;">
           <h3
-            style="font-family:var(--font-titulo); font-size:36px; font-weight:700; color:var(--ameixa); margin-bottom:8px;">
+            style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--ameixa); margin-bottom:4px;">
+            Nome e identificação
+          </h3>
+          <p class="texto-corpo" style="font-size:29px; line-height:1.35; margin-bottom:4px;">
+            Você pode utilizar seu nome e uma identificação relacionada ao UGC Tech.
+          </p>
+          <p class="texto-corpo" style="font-size:29px; line-height:1.35; margin-bottom:0;">
+            <strong style="color:var(--terracota);">Exemplo:</strong> <strong style="color:var(--ameixa);">Luana | UGC Tech Creator</strong>
+          </p>
+        </div>
+
+        <!-- Mockup do perfil com washi tape e sticker -->
+        <div style="text-align:center; position:relative; margin-top:-4px; margin-bottom:4px;">
+          <div class="washi washi--terracota"
+            style="top:-14px; left:50%; transform:translateX(-50%) rotate(1deg); z-index:3;"></div>
+          <img class="sticker" src="assets/stickers/giz/sticker-giz-seta-laco-laranja.png" alt="" aria-hidden="true"
+            style="bottom:6px; right:30px; width:85px; transform:rotate(-8deg);">
+          <img src="assets/prints/print-instagram-perfil.png" alt="Print do perfil do Instagram"
+            style="max-width:740px; width:92%; height:auto; border-radius:18px; box-shadow:var(--sombra-recorte); border:3px solid var(--branco); display:block; margin:0 auto;">
+        </div>
+
+        <!-- Bloco 2: Bio -->
+        <div class="card-bloco" style="border-left:8px solid var(--laranja); padding:18px 24px;">
+          <h3
+            style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--ameixa); margin-bottom:4px;">
             Bio
           </h3>
-          <p class="texto-corpo" style="font-size:34px; line-height:1.42; margin-bottom:12px;">
+          <p class="texto-corpo" style="font-size:29px; line-height:1.35; margin-bottom:8px;">
             A bio deve explicar rapidamente o que você faz.
           </p>
-          <p class="texto-corpo" style="font-size:33px; font-weight:700; color:var(--terracota); margin-bottom:8px;">
-            Exemplo:
-          </p>
           <div
-            style="background-color:var(--bg); padding:16px 22px; border-radius:16px; border:2px dashed var(--ameixa);">
-            <p class="texto-corpo" style="font-size:32px; line-height:1.45; font-style:italic;">
+            style="background-color:var(--bg); padding:14px 20px; border-radius:14px; border:2px dashed var(--ameixa);">
+            <p class="texto-corpo" style="font-size:28px; line-height:1.38; font-style:italic; margin-bottom:0;">
               “Crio conteúdos para apps e ferramentas digitais.<br>
               UGC Tech | Vídeos criativos para marcas.<br>
               Brasil • Oportunidades internacionais.”
@@ -2398,13 +2425,14 @@
           </div>
         </div>
 
-        <div style="text-align:center; position:relative; margin-top:8px;">
+        <!-- Mockup da bio com washi tape e sticker -->
+        <div style="text-align:center; position:relative; margin-top:-6px;">
           <div class="washi washi--oliva"
-            style="top:-14px; left:50%; transform:translateX(-50%) rotate(-2deg); z-index:3;"></div>
+            style="top:-12px; left:50%; transform:translateX(-50%) rotate(-2deg); z-index:3;"></div>
           <img class="sticker" src="assets/stickers/giz/sticker-giz-onda-terracota.png" alt="" aria-hidden="true"
-            style="bottom:-10px; right:50px; width:160px; transform:rotate(3deg);">
+            style="bottom:-8px; right:60px; width:130px; transform:rotate(3deg);">
           <img src="assets/prints/print-instagram-bio.png" alt="Print da bio do Instagram"
-            style="max-width:100%; width:100%; height:auto; border-radius:18px; box-shadow:var(--sombra-recorte); border:3px solid var(--branco); display:block; margin:0 auto;">
+            style="max-width:740px; width:92%; height:auto; border-radius:16px; box-shadow:var(--sombra-recorte); border:3px solid var(--branco); display:block; margin:0 auto;">
         </div>
       </div>
     </div>
@@ -2415,7 +2443,7 @@
     </footer>
   </section>
 
-  <!-- PÁGINA 41 — CAPÍTULO 12: O QUE PUBLICAR E DESTAQUES (PARTE 3/3) -->
+<!-- PÁGINA 41 — CAPÍTULO 12: O QUE PUBLICAR E DESTAQUES (PARTE 3/3) -->
   <section class="page" id="pagina-41-cap12-p3">
     <div class="page-content">
       <header class="topo-nav">
@@ -3123,11 +3151,11 @@
         <span>Parte 4 · Capítulo 16</span>
       </header>
 
-      <div class="cap-abertura" style="position:relative; margin-bottom:12px;">
+            <div class="cap-abertura" style="position:relative; margin-bottom:12px;">
         <img class="sticker" src="assets/stickers/recortes/dark-green-star-cluster.png" alt="" aria-hidden="true"
-          style="top:0; right:30px; width:65px; transform:rotate(8deg);">
+          style="top:-42px; right:15px; width:52px; transform:rotate(14deg);">
         <div class="cap-num">16</div>
-        <h2 class="titulo-cap" style="font-size:46px;">COMO ENCONTRAR E ESCOLHER CAMPANHAS</h2>
+        <h2 class="titulo-cap" style="font-size:46px; padding-right:75px;">COMO ENCONTRAR E ESCOLHER CAMPANHAS</h2>
       </div>
 
       <p class="texto-corpo" style="font-size:30px; line-height:1.36; margin-bottom:6px;">
@@ -3494,7 +3522,7 @@
     <div class="page-content">
       <header class="topo-nav">
         <span>Parte 5 · Capítulo 19</span>
-        <span class="topo-nav__tag">1 / 7</span>
+        <span class="topo-nav__tag">1 / 6</span>
       </header>
 
       <div class="cap-abertura" style="margin-bottom:18px;">
@@ -3555,7 +3583,7 @@
     <div class="page-content">
       <header class="topo-nav" style="margin-bottom:18px;">
         <span>Parte 5 · Capítulo 19</span>
-        <span class="topo-nav__tag">2 / 7</span>
+        <span class="topo-nav__tag">2 / 6</span>
       </header>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px; margin-top:6px;">
@@ -3595,7 +3623,7 @@
     <div class="page-content">
       <header class="topo-nav">
         <span>Parte 5 · Capítulo 19</span>
-        <span class="topo-nav__tag">3 / 7</span>
+        <span class="topo-nav__tag">3 / 6</span>
       </header>
 
       <div class="card-bloco" style="border-left:8px solid var(--terracota); padding:20px 26px; margin-bottom:16px;">
@@ -3661,7 +3689,7 @@
     <div class="page-content">
       <header class="topo-nav">
         <span>Parte 5 · Capítulo 19</span>
-        <span class="topo-nav__tag">4 / 7</span>
+        <span class="topo-nav__tag">4 / 6</span>
       </header>
 
       <div class="card-bloco" style="border-left:8px solid var(--ameixa); padding:20px 26px; margin-bottom:16px;">
@@ -3720,80 +3748,8 @@
     </footer>
   </section>
 
-  <!-- PÁGINA 59 — CAPÍTULO 19: FIXO + COMISSÃO E SOMENTE COMISSÃO (PARTE 5/7) -->
+  <!-- PÁGINA 59 — CAPÍTULO 19: ANÚNCIOS PAGOS + COMISSÃO (PARTE 5/6) -->
   <section class="page" id="pagina-59-cap19-p5">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 5 · Capítulo 19</span>
-        <span class="topo-nav__tag">5 / 7</span>
-      </header>
-
-      <div class="card-bloco"
-        style="border-left:8px solid var(--laranja); padding:20px 26px; margin-bottom:16px; position:relative;">
-        <img src="assets/stickers/recortes/silver-bulldog-clip.png" alt="" aria-hidden="true"
-          style="position:absolute; top:-16px; right:30px; width:48px; transform:rotate(-6deg); z-index:3;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:33px; font-weight:700; color:var(--ameixa); margin-bottom:8px; padding-right:50px;">
-          19.4 Fixed Fee + Commission — Fixo + comissão
-        </h3>
-        <p class="texto-corpo" style="font-size:30px; line-height:1.4; margin-bottom:10px;">
-          Nesse modelo, existe um pagamento fixo pela entrega e uma comissão por vendas ou ações atribuídas ao conteúdo.
-        </p>
-
-        <!-- Exemplo com cálculo em destaque -->
-        <div
-          style="background-color:rgba(242,138,48,0.12); border-left:6px solid var(--laranja); border-radius:12px; padding:12px 18px; margin-bottom:10px;">
-          <p
-            style="font-family:var(--font-titulo); font-size:28px; font-weight:700; color:var(--ameixa); margin-bottom:4px;">
-            Exemplo:
-          </p>
-          <ul
-            style="list-style:none; display:flex; flex-direction:column; gap:4px; font-size:28px; line-height:1.35; padding-left:0; color:var(--tinta);">
-            <li>• <strong>Pagamento fixo:</strong> US$ 50.</li>
-            <li>• <strong>Comissão:</strong> 10% sobre vendas elegíveis.</li>
-            <li>• <strong>Vendas atribuídas:</strong> US$ 500.</li>
-            <li>• <strong>Comissão:</strong> US$ 50.</li>
-            <li style="color:var(--terracota); font-weight:700; margin-top:2px;">• <strong>Total ilustrativo:</strong>
-              US$ 100.</li>
-          </ul>
-        </div>
-
-        <p class="texto-corpo" style="font-size:29px; line-height:1.38;">
-          É necessário saber como a empresa identifica as vendas, qual período considera e quando libera o pagamento.
-        </p>
-      </div>
-
-      <div class="card-bloco" style="border-left:8px solid var(--oliva); padding:20px 26px;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:33px; font-weight:700; color:var(--oliva); margin-bottom:8px;">
-          19.5 Commission Only — Somente comissão
-        </h3>
-        <p class="texto-corpo" style="font-size:30px; line-height:1.4; margin-bottom:8px;">
-          A remuneração depende das vendas ou ações atribuídas à sua divulgação.
-        </p>
-        <p class="texto-corpo" style="font-size:30px; line-height:1.4; margin-bottom:10px;">
-          Nesse modelo, pode não existir pagamento fixo pela produção.
-        </p>
-        <div class="card-bloco card-bloco--ameixa" style="border-top:6px solid var(--laranja); padding:16px 20px;">
-          <p class="texto-corpo" style="color:var(--bg); font-size:28px; line-height:1.38;">
-            Antes de aceitar, avalie o risco: você pode produzir o conteúdo e não receber comissão se não houver vendas
-            elegíveis.
-          </p>
-        </div>
-      </div>
-
-      <img class="sticker" src="assets/stickers/giz/sticker-giz-linhas-movimento-laranja.png" alt="" aria-hidden="true"
-        style="bottom:120px; right:40px; width:80px; transform:rotate(5deg);">
-    </div>
-
-    <footer class="rodape-pag">
-      <span>19. Formas de remuneração: fixo, CPM e comissões</span>
-      <span class="rodape-pag__num">59</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 60 — CAPÍTULO 19: ANÚNCIOS PAGOS + COMISSÃO (PARTE 6/7) -->
-  <section class="page" id="pagina-60-cap19-p6">
     <div class="page-content">
       <header class="topo-nav">
         <span>Parte 5 · Capítulo 19</span>
@@ -3803,7 +3759,7 @@
       <div class="card-bloco" style="border-left:8px solid var(--vinho); padding:24px 28px; margin-bottom:28px;">
         <h3
           style="font-family:var(--font-titulo); font-size:34px; font-weight:700; color:var(--vinho); margin-bottom:12px; line-height:1.25;">
-          19.6 Paid Ads + Commission — Anúncios pagos + comissão
+          19.4 Paid Ads + Commission — Anúncios pagos + comissão
         </h3>
         <p class="texto-corpo" style="font-size:29px; line-height:1.42; margin-bottom:12px;">
           A empresa pode utilizar o conteúdo em anúncios pagos e oferecer uma comissão sobre vendas atribuídas.
@@ -3840,16 +3796,16 @@
 
     <footer class="rodape-pag">
       <span>19. Formas de remuneração: fixo, CPM e comissões</span>
-      <span class="rodape-pag__num">60</span>
+      <span class="rodape-pag__num">59</span>
     </footer>
   </section>
 
-  <!-- PÁGINA 61 — CAPÍTULO 19: ANTES DE ACEITAR QUALQUER MODELO, PERGUNTE (PARTE 7/7) -->
-  <section class="page page--lilas" id="pagina-61-cap19-p7">
+  <!-- PÁGINA 60 — CAPÍTULO 19: ANTES DE ACEITAR QUALQUER MODELO, PERGUNTE (PARTE 6/6) -->
+  <section class="page page--lilas" id="pagina-60-cap19-p6">
     <div class="page-content">
       <header class="topo-nav">
         <span>Parte 5 · Capítulo 19</span>
-        <span class="topo-nav__tag">7 / 7</span>
+        <span class="topo-nav__tag">6 / 6</span>
       </header>
 
       <h3 class="subtitulo-cap" style="font-size:36px; font-weight:700; color:var(--ameixa); margin-bottom:18px;">
@@ -3888,7 +3844,7 @@
 
     <footer class="rodape-pag">
       <span>19. Formas de remuneração: fixo, CPM e comissões</span>
-      <span class="rodape-pag__num">61</span>
+      <span class="rodape-pag__num">60</span>
     </footer>
   </section>
 
@@ -3901,11 +3857,8 @@
       </header>
 
       <div class="cap-abertura" style="position:relative; margin-bottom:14px;">
-        <img class="sticker" src="assets/stickers/recortes/sticker-notebook.png" alt="" aria-hidden="true"
-          style="top:-14px; right:20px; width:85px; transform:rotate(-6deg);">
         <div class="cap-num">20</div>
-        <h2 class="titulo-cap" style="font-size:44px; padding-right:90px;">COMO ENTENDER BRIEFINGS E ENTREGAR VÍDEOS
-        </h2>
+        <h2 class="titulo-cap" style="font-size:44px;">COMO ENTENDER BRIEFINGS E ENTREGAR VÍDEOS</h2>
       </div>
 
       <p class="texto-corpo" style="font-size:31px; line-height:1.4; margin-bottom:8px;">
@@ -4301,7 +4254,7 @@
 
     <footer class="rodape-pag">
       <span style="color:rgba(250,246,241,0.7);">21. Contratos, direitos de uso e cuidados importantes</span>
-      <span class="rodape-pag__num" style="color:var(--bg);">66</span>
+      <span class="rodape-pag__num">66</span>
     </footer>
   </section>
 
@@ -4496,7 +4449,7 @@
     </footer>
   </section>
 
-  <!-- PÁGINA 72 — CAPÍTULO 23: OBSERVE ANÚNCIOS E COMUNICAÇÃO (PARTE 2/3) -->
+  <!-- PÁGINA 71 — CAPÍTULO 23: OBSERVE ANÚNCIOS E COMUNICAÇÃO (PARTE 2/3) -->
   <section class="page page--lilas" id="pagina-70-cap23-p2">
     <div class="page-content">
       <header class="topo-nav">
@@ -4551,7 +4504,7 @@
     </footer>
   </section>
 
-  <!-- PÁGINA 73 — CAPÍTULO 23: ORGANIZE SUAS ENTREGAS E REPUTAÇÃO (PARTE 3/3) -->
+  <!-- PÁGINA 72 — CAPÍTULO 23: ORGANIZE SUAS ENTREGAS E REPUTAÇÃO (PARTE 3/3) -->
   <section class="page" id="pagina-71-cap23-p3">
     <div class="page-content">
       <header class="topo-nav">
@@ -4646,967 +4599,10 @@
     </footer>
   </section>
 
-  <!-- PÁGINA 74 — CAPÍTULO 24: PLANO DE AÇÃO DE 30 DIAS — SEMANAS 1 E 2 (PARTE 1/2) -->
-  <section class="page" id="pagina-72-cap24-p1">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 24</span>
-        <span class="topo-nav__tag">1 / 2</span>
-      </header>
-
-      <div class="cap-abertura" style="position:relative; margin-bottom:12px;">
-        <div class="cap-num">24</div>
-        <h2 class="titulo-cap" style="font-size:40px;">PLANO DE AÇÃO DE 30 DIAS</h2>
-      </div>
-
-      <div class="card-bloco card-bloco--ameixa" style="padding:12px 20px; margin-bottom:14px;">
-        <p class="texto-corpo" style="color:var(--bg); font-size:27px; line-height:1.36; margin-bottom:0;">
-          Este plano é uma sugestão de organização para quem está começando. Você pode adaptar os dias à sua rotina.
-        </p>
-      </div>
-
-      <!-- Grid de 2 colunas: Semana 1 e Semana 2 -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start;">
-        <!-- Semana 1 -->
-        <div>
-          <div style="position:relative; margin-bottom:8px;">
-            <h3 style="font-family:var(--font-titulo); font-size:29px; font-weight:700; color:var(--ameixa);">
-              Semana 1 — Conhecendo o mercado
-            </h3>
-            <img src="assets/stickers/recortes/smiling-yellow-star.png" alt="" aria-hidden="true"
-              style="position:absolute; top:-16px; right:5px; width:45px; transform:rotate(8deg); z-index:3;">
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                1:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Entenda o que é UGC Tech.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                2:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Pesquise aplicativos e ferramentas
-                digitais.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                3:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Conheça os formatos de vídeos.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                4:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Observe exemplos de conteúdos de
-                tecnologia.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                5:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Escolha três aplicativos para
-                praticar.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                6:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Faça seu primeiro roteiro.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--ameixa);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                7:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Grave seu primeiro vídeo
-                demonstrativo.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semana 2 -->
-        <div>
-          <div style="position:relative; margin-bottom:8px;">
-            <h3 style="font-family:var(--font-titulo); font-size:29px; font-weight:700; color:var(--ameixa);">
-              Semana 2 — Produção de conteúdo
-            </h3>
-            <img src="assets/stickers/recortes/purple-grid-washi.png" alt="" aria-hidden="true"
-              style="position:absolute; top:-16px; right:10px; width:95px; transform:rotate(-2deg); z-index:3;">
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                8:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Pratique Talking Head.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                9:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Pratique Screen Recording.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                10:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Grave um Voice-over.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                11:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Faça um Tutorial.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                12:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Grave com Face Cam + Screen
-                Recording.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                13:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Edite seus vídeos.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--laranja);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--laranja); min-width:80px; flex-shrink:0;">Dia
-                14:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Revise os resultados e identifique
-                melhorias.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="rodape-pag">
-      <span>24. Plano de ação de 30 dias</span>
-      <span class="rodape-pag__num">72</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 75 — CAPÍTULO 24: PLANO DE AÇÃO DE 30 DIAS — SEMANAS 3 E 4 (PARTE 2/2) -->
-  <section class="page page--lilas" id="pagina-73-cap24-p2">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 24</span>
-        <span class="topo-nav__tag">2 / 2</span>
-      </header>
-
-      <!-- Grid de 2 colunas: Semana 3 e Semana 4 -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; margin-bottom:12px;">
-        <!-- Semana 3 -->
-        <div>
-          <div style="position:relative; margin-bottom:8px;">
-            <img src="assets/stickers/recortes/dark-green-star-cluster.png" alt="" aria-hidden="true"
-              style="position:absolute; top:-16px; right:5px; width:45px; transform:rotate(6deg); z-index:3;">
-            <h3 style="font-family:var(--font-titulo); font-size:29px; font-weight:700; color:var(--terracota);">
-              Semana 3 — Portfólio
-            </h3>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                15:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Organize seu perfil no
-                Instagram.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                16:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Escreva sua bio.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                17:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Escolha seus melhores vídeos.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                18:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Monte seu portfólio.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                19:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Crie uma apresentação
-                profissional.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                20:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Pesquise plataformas de UGC.</span>
-            </div>
-            <div class="passo-linha" style="padding:7px 12px; margin-bottom:0; border-left:5px solid var(--terracota);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:25px; color:var(--terracota); min-width:80px; flex-shrink:0;">Dia
-                21:</span>
-              <span style="font-size:25px; line-height:1.28; color:var(--tinta);">Confira os critérios de
-                cadastro.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Semana 4 -->
-        <div>
-          <div style="position:relative; margin-bottom:8px;">
-            <img src="assets/stickers/recortes/teal-push-pin.png" alt="" aria-hidden="true"
-              style="position:absolute; top:-16px; right:5px; width:40px; transform:rotate(-8deg); z-index:3;">
-            <h3 style="font-family:var(--font-titulo); font-size:29px; font-weight:700; color:var(--oliva);">
-              Semana 4 — Oportunidades
-            </h3>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:5px;">
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                22:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Faça seu primeiro cadastro.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                23:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Complete seu perfil nas
-                plataformas.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                24:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Pesquise campanhas compatíveis.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                25:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Estude um briefing.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                26:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Prepare uma candidatura.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                27:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Revise seus modelos de
-                apresentação.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                28:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Envie candidaturas adequadas.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                29:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Organize suas respostas e
-                processos.</span>
-            </div>
-            <div class="passo-linha" style="padding:5px 10px; margin-bottom:0; border-left:5px solid var(--oliva);">
-              <span
-                style="font-family:var(--font-titulo); font-weight:800; font-size:24px; color:var(--oliva); min-width:76px; flex-shrink:0;">Dia
-                30:</span>
-              <span style="font-size:24px; line-height:1.26; color:var(--tinta);">Revise o que aprendeu e
-                planeje.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Lembre-se final em destaque -->
-      <div class="card-bloco card-bloco--ameixa" style="border-top:5px solid var(--laranja); padding:12px 18px;">
-        <p class="texto-corpo" style="color:var(--bg); font-size:25px; line-height:1.32; margin-bottom:0;">
-          <strong>Lembre-se:</strong> o objetivo dos 30 dias é construir uma base profissional. A aprovação em campanhas
-          e a conquista de pagamentos não são garantidas por esse cronograma.
-        </p>
-      </div>
-
-      <img class="sticker" src="assets/stickers/giz/sticker-giz-coracao-terracota.png" alt="" aria-hidden="true"
-        style="bottom:120px; right:40px; width:65px; transform:rotate(-4deg);">
-    </div>
-
-    <footer class="rodape-pag">
-      <span>24. Plano de ação de 30 dias</span>
-      <span class="rodape-pag__num">73</span>
-    </footer>
-  </section>
-
   <!-- ======================================================================
-       LOTE 7 — CAPÍTULOS 25 E 26 (PÁGINAS 78 A 85)
+       PÁGINA 72 — CONSIDERAÇÕES FINAIS
        ====================================================================== -->
-
-  <!-- PÁGINA 78 — CAPÍTULO 25: MATERIAIS EXTRAS — KIT DA CRIADORA (PARTE 1/4) -->
-  <section class="page" id="pagina-74-cap25-p1">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 25</span>
-        <span class="topo-nav__tag">1 / 4</span>
-      </header>
-
-      <div class="cap-abertura" style="position:relative; margin-bottom:14px;">
-        <div class="cap-num">25</div>
-        <h2 class="titulo-cap" style="font-size:38px;">MATERIAIS EXTRAS — KIT DA CRIADORA UGC TECH</h2>
-      </div>
-
-      <!-- Modelo 25.1 -->
-      <div class="card-bloco"
-        style="border:2px dashed var(--laranja); border-left:8px solid var(--laranja); padding:18px 24px; margin-bottom:14px; position:relative;">
-        <img src="assets/stickers/recortes/green-gingham-washi.png" alt="" aria-hidden="true"
-          style="position:absolute; top:-14px; left:30px; width:130px; transform:rotate(-2deg); z-index:3;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--laranja); margin-bottom:8px;">
-          25.1 Modelo de bio para Instagram
-        </h3>
-        <p class="texto-corpo" style="font-size:29px; line-height:1.45; font-style:italic; color:var(--tinta);">
-          “UGC Tech Creator | Apps e ferramentas digitais.<br>
-          Crio vídeos naturais e criativos para marcas.<br>
-          Brasil • Conteúdo para o mercado digital.”
-        </p>
-      </div>
-
-      <!-- Modelo 25.2 -->
-      <div class="card-bloco"
-        style="border:2px dashed var(--ameixa); border-left:8px solid var(--ameixa); padding:18px 24px; margin-bottom:14px; position:relative;">
-        <img src="assets/stickers/recortes/silver-bulldog-clip.png" alt="" aria-hidden="true"
-          style="position:absolute; top:-16px; right:28px; width:48px; transform:rotate(8deg); z-index:3;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--ameixa); margin-bottom:8px;">
-          25.2 Modelo de apresentação profissional
-        </h3>
-        <p class="texto-corpo"
-          style="font-size:28px; line-height:1.42; font-style:italic; color:var(--tinta); margin-bottom:8px;">
-          “Olá! Sou criadora de conteúdo UGC Tech e gosto de apresentar aplicativos, plataformas e ferramentas digitais
-          de maneira simples e natural.
-        </p>
-        <p class="texto-corpo"
-          style="font-size:28px; line-height:1.42; font-style:italic; color:var(--tinta); margin-bottom:8px;">
-          Meu foco é produzir vídeos que demonstrem funcionalidades e ajudem o público a entender como os produtos
-          digitais podem ser utilizados no dia a dia.
-        </p>
-        <p class="texto-corpo" style="font-size:28px; line-height:1.42; font-style:italic; color:var(--tinta);">
-          Estou sempre buscando desenvolver minhas habilidades e criar conteúdos alinhados às necessidades de cada
-          marca.”
-        </p>
-      </div>
-    </div>
-
-    <footer class="rodape-pag">
-      <span>25. Materiais extras: modelos prontos e checklists</span>
-      <span class="rodape-pag__num">74</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 79 — CAPÍTULO 25: MODELOS DE CANDIDATURA (PARTE 2/4) -->
-  <section class="page page--lilas" id="pagina-75-cap25-p2">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 25</span>
-        <span class="topo-nav__tag">2 / 4</span>
-      </header>
-
-      <!-- Modelo 25.3 -->
-      <div class="card-bloco"
-        style="border:2px dashed var(--ameixa); border-left:8px solid var(--ameixa); padding:22px 28px; margin-bottom:16px; position:relative;">
-        <img src="assets/stickers/recortes/gold-t-clip.png" alt="" aria-hidden="true"
-          style="position:absolute; top:-16px; right:30px; width:48px; transform:rotate(-6deg); z-index:3;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--ameixa); margin-bottom:10px;">
-          25.3 Modelo de candidatura em português
-        </h3>
-        <p class="texto-corpo" style="font-size:29px; line-height:1.45; font-style:italic; color:var(--tinta);">
-          “Olá! Tenho interesse em participar desta campanha. Gostei da proposta e acredito que posso contribuir com um
-          conteúdo claro, criativo e alinhado ao objetivo da marca. Trabalho com vídeos de aplicativos e ferramentas
-          digitais e ficaria feliz em fazer parte desta oportunidade. Obrigada!”
-        </p>
-      </div>
-
-      <!-- Modelo 25.4 -->
-      <div class="card-bloco"
-        style="border:2px dashed var(--terracota); border-left:8px solid var(--terracota); padding:22px 28px; margin-bottom:14px; position:relative;">
-        <img src="assets/stickers/recortes/lilac-stripe-washi.png" alt="" aria-hidden="true"
-          style="position:absolute; top:-14px; left:30px; width:130px; transform:rotate(2deg); z-index:3;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:32px; font-weight:700; color:var(--terracota); margin-bottom:10px;">
-          25.4 Modelo de candidatura em inglês
-        </h3>
-        <p class="texto-corpo" style="font-size:29px; line-height:1.45; font-style:italic; color:var(--tinta);">
-          “Hello! I’m interested in participating in this campaign. I like the concept and believe I can create clear,
-          creative content aligned with the brand’s goals. I create videos focused on apps and digital tools, and I
-          would be happy to be part of this opportunity. Thank you!”
-        </p>
-      </div>
-    </div>
-
-    <footer class="rodape-pag">
-      <span>25. Materiais extras: modelos prontos e checklists</span>
-      <span class="rodape-pag__num">75</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 80 — CAPÍTULO 25: MODELOS DE REMUNERAÇÃO E DIREITOS DE USO (PARTE 3/4) -->
-  <section class="page" id="pagina-76-cap25-p3">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 25</span>
-        <span class="topo-nav__tag">3 / 4</span>
-      </header>
-
-      <!-- Modelo 25.5 -->
-      <div class="card-bloco"
-        style="border:2px dashed var(--oliva); border-left:8px solid var(--oliva); padding:16px 22px 14px 22px; margin-bottom:10px; position:relative;">
-        <img src="assets/stickers/recortes/leaf-print-washi.png" alt="" aria-hidden="true"
-          style="position:absolute; top:-18px; right:35px; width:125px; transform:rotate(-1deg); z-index:3;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:29px; font-weight:700; color:var(--oliva); margin-bottom:6px;">
-          25.5 Modelo para perguntar sobre remuneração
-        </h3>
-
-        <div style="background:var(--bg); padding:8px 14px; border-radius:10px; margin-bottom:6px;">
-          <p
-            style="font-family:var(--font-corpo); font-weight:700; font-size:24px; color:var(--ameixa); margin-bottom:2px;">
-            Português:</p>
-          <p class="texto-corpo" style="font-size:25px; line-height:1.34; font-style:italic; color:var(--tinta);">
-            “Olá! Poderiam me confirmar como funciona a remuneração desta campanha? Gostaria de entender se o pagamento
-            é fixo, baseado em CPM ou se existe alguma comissão por resultados. Também gostaria de confirmar o prazo e o
-            método de pagamento. Obrigada!”
-          </p>
-        </div>
-
-        <div style="background:var(--bg); padding:8px 14px; border-radius:10px;">
-          <p
-            style="font-family:var(--font-corpo); font-weight:700; font-size:24px; color:var(--ameixa); margin-bottom:2px;">
-            Inglês:</p>
-          <p class="texto-corpo" style="font-size:25px; line-height:1.34; font-style:italic; color:var(--tinta);">
-            “Hello! Could you please clarify how payment works for this campaign? I would like to know if the
-            compensation is a fixed fee, CPM-based, or includes a commission. I would also appreciate confirmation of
-            the payment timeline and method. Thank you!”
-          </p>
-        </div>
-      </div>
-
-      <!-- Modelo 25.6 -->
-      <div class="card-bloco"
-        style="border:2px dashed var(--terracota); border-left:8px solid var(--terracota); padding:16px 22px 14px 22px; margin-bottom:0; position:relative;">
-        <h3
-          style="font-family:var(--font-titulo); font-size:29px; font-weight:700; color:var(--terracota); margin-bottom:6px;">
-          25.6 Modelo para esclarecer direitos de uso
-        </h3>
-
-        <div style="background:var(--bg); padding:8px 14px; border-radius:10px; margin-bottom:6px;">
-          <p
-            style="font-family:var(--font-corpo); font-weight:700; font-size:24px; color:var(--ameixa); margin-bottom:2px;">
-            Português:</p>
-          <p class="texto-corpo" style="font-size:25px; line-height:1.34; font-style:italic; color:var(--tinta);">
-            “Antes de confirmar minha participação, gostaria de entender melhor os direitos de uso do conteúdo. Por
-            quanto tempo a marca poderá utilizar o vídeo e em quais canais? A autorização inclui anúncios pagos?”
-          </p>
-        </div>
-
-        <div style="background:var(--bg); padding:8px 14px; border-radius:10px;">
-          <p
-            style="font-family:var(--font-corpo); font-weight:700; font-size:24px; color:var(--ameixa); margin-bottom:2px;">
-            Inglês:</p>
-          <p class="texto-corpo" style="font-size:25px; line-height:1.34; font-style:italic; color:var(--tinta);">
-            “Before confirming my participation, I would like to better understand the content usage rights. How long
-            can the brand use the video, and on which platforms? Does the authorization include paid ads?”
-          </p>
-        </div>
-      </div>
-
-      <img class="sticker" src="assets/stickers/giz/sticker-giz-brilho-vinho.png" alt="" aria-hidden="true"
-        style="bottom:125px; right:-65px; width:65px; transform:rotate(6deg);">
-    </div>
-
-    <footer class="rodape-pag">
-      <span>25. Materiais extras: modelos prontos e checklists</span>
-      <span class="rodape-pag__num">76</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 81 — CAPÍTULO 25: CHECKLISTS DE GRAVAÇÃO E CAMPANHA (PARTE 4/4) -->
-  <section class="page page--lilas" id="pagina-77-cap25-p4">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 25</span>
-        <span class="topo-nav__tag">4 / 4</span>
-      </header>
-
-      <!-- Grid de 2 colunas: Checklist 25.7 e Checklist 25.8 -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start;">
-        <!-- 25.7 Checklist de gravação -->
-        <div class="card-bloco" style="border-top:8px solid var(--oliva); padding:16px 18px 12px; position:relative;">
-          <img src="assets/stickers/recortes/periwinkle-crinkled-tape.png" alt="" aria-hidden="true"
-            style="position:absolute; top:-22px; left:20px; width:110px; transform:rotate(-2deg); z-index:3;">
-          <h3
-            style="font-family:var(--font-titulo); font-size:28px; font-weight:700; color:var(--ameixa); margin-bottom:10px;">
-            25.7 Checklist de gravação
-          </h3>
-
-          <div style="display:flex; flex-direction:column; gap:5px;">
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Lente do celular limpa.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Iluminação adequada.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Ambiente organizado.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Áudio testado.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Roteiro revisado.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Aplicativo funcionando.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Notificações desativadas.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Dados pessoais protegidos.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Enquadramento conferido.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Gravação revisada.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 25.8 Checklist antes de aceitar uma campanha -->
-        <div class="card-bloco" style="border-top:8px solid var(--ameixa); padding:16px 18px 12px; position:relative;">
-          <img src="assets/stickers/recortes/dark-green-star-cluster.png" alt="" aria-hidden="true"
-            style="position:absolute; top:-20px; right:10px; width:45px; transform:rotate(8deg); z-index:3;">
-          <h3
-            style="font-family:var(--font-titulo); font-size:28px; font-weight:700; color:var(--ameixa); margin-bottom:10px;">
-            25.8 Antes de aceitar campanha
-          </h3>
-
-          <div style="display:flex; flex-direction:column; gap:5px;">
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Entendi o produto.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Entendi o briefing.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Sei quantos vídeos entregar.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Conheço os formatos.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Sei o modelo de remuneração.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Conheço o prazo de entrega.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Entendi os direitos de uso.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Sei como e quando receberei.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Li as condições do contrato.</span>
-            </div>
-            <div class="check-item" style="padding:6px 10px; background:var(--bg); border-radius:10px;">
-              <svg class="check-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true"
-                style="width:22px; height:22px; flex-shrink:0;">
-                <rect x="3" y="3" width="30" height="30" rx="7" stroke="#4A2C7A" stroke-width="2.5" fill="#FFFFFF" />
-              </svg>
-              <span class="check-rotulo" style="font-size:24px; color:var(--tinta);">Tenho condições de cumprir.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="rodape-pag">
-      <span>25. Materiais extras: modelos prontos e checklists</span>
-      <span class="rodape-pag__num">77</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 78 — CAPÍTULO 26: GLOSSÁRIO UGC TECH (PARTE 1/2) -->
-  <section class="page" id="pagina-78-cap26-p1">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 26</span>
-        <span class="topo-nav__tag">1 / 2</span>
-      </header>
-
-      <div class="cap-abertura" style="position:relative; margin-bottom:12px;">
-        <div class="cap-num">26</div>
-        <h2 class="titulo-cap" style="font-size:38px;">GLOSSÁRIO UGC TECH</h2>
-      </div>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">UGC:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> User Generated Content — conteúdo gerado
-            por usuários.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">UGC Tech:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> conteúdo criado para aplicativos,
-            plataformas, softwares e ferramentas digitais.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Creator:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> criador ou criadora de conteúdo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Brand:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> marca ou empresa.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Campaign:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> campanha.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Briefing:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> documento com as orientações da
-            campanha.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Deliverables:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> entregas solicitadas pela empresa.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Fixed Fee:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> pagamento fixo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">CPM:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> Cost Per Mille — custo ou remuneração
-            calculada por mil unidades de uma métrica definida.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Commission:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> comissão.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Paid Ads:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> anúncios pagos.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Organic Content:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> conteúdo publicado sem impulsionamento
-            pago.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Hook:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> gancho inicial para despertar
-            atenção.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">CTA:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> Call to Action — chamada para ação.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Talking Head:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> vídeo em que a pessoa fala diretamente
-            para a câmera.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Screen
-            Recording:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> gravação da tela.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Voice-over:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> narração sobre imagens ou vídeos.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Green Screen:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> recurso que permite utilizar uma imagem ou
-            vídeo como fundo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Split Screen:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> tela dividida.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Reaction Video:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> vídeo de reação.</span>
-        </div>
-      </div>
-
-      <img class="sticker" src="assets/stickers/giz/sticker-giz-brilho-laranja.png" alt="" aria-hidden="true"
-        style="bottom:120px; right:35px; width:65px; transform:rotate(8deg);">
-    </div>
-
-    <footer class="rodape-pag">
-      <span>26. Glossário UGC Tech</span>
-      <span class="rodape-pag__num">78</span>
-    </footer>
-  </section>
-
-  <!-- PÁGINA 79 — CAPÍTULO 26: GLOSSÁRIO UGC TECH (PARTE 2/2) -->
-  <section class="page page--lilas" id="pagina-79-cap26-p2">
-    <div class="page-content">
-      <header class="topo-nav">
-        <span>Parte 6 · Capítulo 26</span>
-        <span class="topo-nav__tag">2 / 2</span>
-      </header>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Skit:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> encenação curta.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Tutorial:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> conteúdo que ensina como fazer
-            algo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Walkthrough:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> demonstração passo a passo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">App Demo:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> demonstração de um aplicativo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Carousel:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> sequência de cards ou slides.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Ad Creative:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> peça criativa desenvolvida para
-            publicidade.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">UGC Ad:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> conteúdo UGC utilizado em formato de
-            anúncio.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">A-roll:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> gravação principal, geralmente com a
-            pessoa falando.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">B-roll:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> imagens complementares que ajudam a
-            ilustrar o conteúdo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Captions:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> legendas.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Script:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> roteiro.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Raw Footage:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> arquivos brutos, sem edição final.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Multiple Hooks:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> diferentes versões de abertura para um
-            mesmo conteúdo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Cutdown:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> versão reduzida de um vídeo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Aspect Ratio:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> proporção da imagem, como 9:16 ou
-            16:9.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Usage Rights:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> direitos de uso do conteúdo.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Partnership
-            Code:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> código de parceria utilizado em
-            determinados processos de autorização de anúncios.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Whitelisting:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> prática em que uma marca recebe
-            autorização para veicular anúncios associados à identidade ou conta de um criador, conforme as ferramentas e
-            permissões da plataforma.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Portfolio:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> portfólio com exemplos de
-            trabalhos.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Deadline:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> prazo final de entrega.</span>
-        </div>
-        <div class="card-bloco"
-          style="display:block; padding:8px 12px; margin-bottom:0; border-radius:10px; border-left:4px solid var(--ameixa); background:#FFFFFF; box-shadow:0 2px 6px rgba(42,26,69,0.05);">
-          <strong style="font-family:var(--font-titulo); font-size:22px; color:var(--ameixa);">Revision:</strong>
-          <span style="font-size:21px; line-height:1.3; color:var(--tinta);"> revisão ou alteração solicitada no
-            conteúdo.</span>
-        </div>
-      </div>
-
-      <img class="sticker" src="assets/stickers/recortes/smiling-yellow-star.png" alt="" aria-hidden="true"
-        style="bottom:125px; right:35px; width:65px; transform:rotate(-6deg);">
-    </div>
-
-    <footer class="rodape-pag">
-      <span>26. Glossário UGC Tech</span>
-      <span class="rodape-pag__num">79</span>
-    </footer>
-  </section>
-
-  <!-- ======================================================================
-       PÁGINA 80 — CONSIDERAÇÕES FINAIS
-       ====================================================================== -->
-  <section class="page" id="pagina-80-consideracoes-finais">
+  <section class="page" id="pagina-72-consideracoes-finais">
     <div class="page-content">
       <header class="topo-nav">
         <span>CONSIDERAÇÕES FINAIS</span>
@@ -5666,14 +4662,14 @@
 
     <footer class="rodape-pag">
       <span>Considerações finais</span>
-      <span class="rodape-pag__num">80</span>
+      <span class="rodape-pag__num">72</span>
     </footer>
   </section>
 
   <!-- ======================================================================
-       PÁGINA 81 — SOBRE A AUTORA
+       PÁGINA 73 — SOBRE A AUTORA
        ====================================================================== -->
-  <section class="page" id="pagina-81-sobre-a-autora">
+  <section class="page" id="pagina-73-sobre-a-autora">
     <div class="page-content">
       <header class="topo-nav">
         <span>SOBRE A AUTORA</span>
@@ -5735,14 +4731,14 @@
 
     <footer class="rodape-pag">
       <span>Sobre a autora</span>
-      <span class="rodape-pag__num">81</span>
+      <span class="rodape-pag__num">73</span>
     </footer>
   </section>
 
   <!-- ======================================================================
-       PÁGINA 82 — AGRADECIMENTO
+       PÁGINA 74 — AGRADECIMENTO
        ====================================================================== -->
-  <section class="page page--lilas" id="pagina-82-agradecimento">
+  <section class="page page--lilas" id="pagina-74-agradecimento">
     <div class="page-content">
       <header class="topo-nav">
         <span>AGRADECIMENTO</span>
@@ -5803,14 +4799,14 @@
 
     <footer class="rodape-pag">
       <span>Agradecimento</span>
-      <span class="rodape-pag__num">82</span>
+      <span class="rodape-pag__num">74</span>
     </footer>
   </section>
 
   <!-- ======================================================================
-       PÁGINA 83 — CONTATOS E LINKS
+       PÁGINA 75 — CONTATOS E LINKS
        ====================================================================== -->
-  <section class="page" id="pagina-83-contatos" style="position:relative; overflow:hidden;">
+  <section class="page" id="pagina-75-contatos" style="position:relative; overflow:hidden;">
     <!-- Marca d'água CREATOR gigante no fundo (apenas outline translúcido com 5% de opacidade) -->
     <div
       style="position:absolute; top:50%; right:-40px; transform:translateY(-50%) rotate(90deg); transform-origin:center center; font-family:'Playfair Display', var(--font-titulo), serif; font-weight:900; font-size:220px; line-height:1; letter-spacing:0.12em; color:transparent; -webkit-text-stroke:2.5px var(--ameixa); opacity:0.05; white-space:nowrap; pointer-events:none; z-index:1; user-select:none;"
@@ -5970,7 +4966,7 @@
 
     <footer class="rodape-pag">
       <span>Contatos</span>
-      <span class="rodape-pag__num">83</span>
+      <span class="rodape-pag__num">75</span>
     </footer>
   </section>
 
