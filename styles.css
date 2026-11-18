@@ -32,8 +32,8 @@
   --mt-verde:   rgba(107, 142, 62, 0.30);
   --mt-lilas:   rgba(205, 184, 234, 0.75);
 
-  --sombra:      0 10px 22px rgba(42, 26, 69, 0.09), 0 2px 4px rgba(42, 26, 69, 0.05);
-  --sombra-forte:0 14px 28px rgba(28, 12, 50, 0.22), 0 3px 6px rgba(28, 12, 50, 0.12);
+  --sombra:      0 4px 10px rgba(0, 0, 0, 0.08);
+  --sombra-forte:0 4px 10px rgba(0, 0, 0, 0.08);
 
   --f-titulo: 'Fraunces', Georgia, serif;
   --f-corpo:  'DM Sans', sans-serif;
@@ -47,7 +47,7 @@
 html, body {
   font-family: var(--f-corpo);
   color: var(--tinta);
-  background: #8f8a94;
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -168,10 +168,11 @@ html, body {
 .card--ameixa .h-sub, .card--vinho .h-sub { color: var(--bg); }
 .card--borda-esq { box-shadow: -10px 0 0 0 var(--lilas), var(--sombra); }
 
-.rot-1  { transform: rotate(-1.2deg); }
-.rot-2  { transform: rotate(1deg); }
-.rot-3  { transform: rotate(-2.5deg); }
-.rot-4  { transform: rotate(2.5deg); }
+.rot-1  { transform: rotate(-1.2deg); box-shadow: none !important; }
+.rot-2  { transform: rotate(1deg); box-shadow: none !important; }
+.rot-3  { transform: rotate(-2.5deg); box-shadow: none !important; }
+.rot-4  { transform: rotate(2.5deg); box-shadow: none !important; }
+[style*="rotate"] { box-shadow: none !important; filter: none !important; }
 
 .postit {
   position: relative;
@@ -179,7 +180,8 @@ html, body {
   border-radius: 6px 6px 34px 6px;
   font-family: var(--f-mao); font-weight: 600;
   font-size: 38px; line-height: 1.22;
-  box-shadow: 0 10px 18px rgba(42, 26, 69, 0.16);
+  border: 1.5px solid rgba(42, 26, 69, 0.14);
+  box-shadow: none;
 }
 .postit--laranja { background: var(--laranja); color: var(--tinta); }
 .postit--oliva   { background: var(--oliva); color: var(--bg); }
@@ -195,7 +197,7 @@ html, body {
   background: rgba(107, 142, 62, 0.62);
   border-left: 3px dotted rgba(255, 255, 255, 0.55);
   border-right: 3px dotted rgba(255, 255, 255, 0.55);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: none;
   pointer-events: none;
 }
 .fita::after {
@@ -213,7 +215,8 @@ html, body {
   background: var(--branco);
   padding: 20px 20px 70px;
   border-radius: 14px;
-  box-shadow: var(--sombra-forte);
+  border: 2px solid var(--borda-card);
+  box-shadow: none;
 }
 .polaroid img { display: block; width: 100%; object-fit: cover; border-radius: 6px; }
 .polaroid__leg {
@@ -221,14 +224,9 @@ html, body {
   font-family: var(--f-mao); font-weight: 600; font-size: 34px; color: var(--tinta);
 }
 
-/* Recorte de foto com contorno branco grosso */
+/* Recorte de foto com contorno branco grosso (embutido no PNG, sem filter CSS) */
 .recorte {
   display: block;
-  filter:
-    drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff)
-    drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff)
-    drop-shadow(4px 4px 0 #fff) drop-shadow(-4px -4px 0 #fff)
-    drop-shadow(0 12px 14px rgba(28, 12, 50, 0.25));
 }
 
 /* Etiqueta tipo pílula */
@@ -292,6 +290,7 @@ html, body {
 .page--ameixa .ab-titulo .it { color: var(--laranja); }
 .page--vinho .ab-num { color: var(--laranja); }
 .page--vinho .ab-titulo { color: var(--bg); }
+.page--vinho .ab-titulo .it { color: var(--laranja); }
 
 /* ==========================================================================
    LISTAS
